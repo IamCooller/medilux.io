@@ -2,7 +2,7 @@
     margin-bottom: 60px;
 }
 
-.feedback .containers {
+.feedback .feedback-form {
     background: #393185;
     border: 1px solid #EDECF2;
     box-sizing: border-box;
@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    height: 153px;
 }
 
 .feedback .feedback-description {

@@ -15,7 +15,7 @@
 }
 
 .specialOffers .specialOffers__list .specialOffers__list-item {
-    max-width: 194px;
+    max-width: 23%;
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
@@ -26,6 +26,7 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
 }
 
 .specialOffers .specialOffers__list .specialOffers__list-item p {
@@ -58,6 +59,7 @@
     justify-content: center;
     margin: 0 auto;
     text-decoration: none;
+    margin-bottom: 15px;
 }
 
 .specialOffers .specialOffers__paggination {

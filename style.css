@@ -10,6 +10,7 @@
 @import url(css/feedback.css);
 @import url(css/news.css);
 @import url(css/footer.css);
+@import url(css/mediaSize.css);
 body {
     background: #FAFAFA;
     font-family: 'Futura PT';
@@ -41,22 +42,4 @@ body {
 
 ::-webkit-scrollbar-button:horizontal:end:increment {
     display: none;
-}
-
-.title {
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 450;
-    font-size: 30px;
-    line-height: 38px;
-    text-transform: uppercase;
-    color: #393185;
-}
-
-.containers {
-    max-width: 870px;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    position: relative;
 }

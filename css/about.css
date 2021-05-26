@@ -30,6 +30,7 @@
 
 .about .about-right .about-right-content .about-right-content-center {
     max-width: 570px;
+    position: relative;
 }
 
 .about .about-right .about-right-content p {

@@ -3,10 +3,6 @@
     overflow: hidden;
 }
 
-.main .containers {
-    max-width: 900px;
-}
-
 .main header .header-top {
     display: flex;
     justify-content: space-between;
@@ -125,7 +121,7 @@
 }
 
 .main header .header-top .header-top__menu li.active a {
-    color: #393185;
+    color: #E31717;
 }
 
 .main header .main__banner {
