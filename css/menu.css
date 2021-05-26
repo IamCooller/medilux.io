@@ -1,4 +1,4 @@
-.main .menu {
+.menu {
     display: table;
     width: 310px;
     background: #FFFFFF;
@@ -10,9 +10,10 @@
     position: fixed;
     z-index: 99;
     height: 100%;
+    left: 0;
 }
 
-.main .menu .logo img {
+.logo img {
     width: 100%;
     display: block;
     margin: 0 auto;
@@ -20,12 +21,12 @@
     max-width: 227px;
 }
 
-.main .menu .accordion {
+.menu .accordion {
     margin: 0;
     padding: 0;
 }
 
-.main .menu .accordion {
+.menu .accordion {
     width: 100%;
     background: #FFF;
     -webkit-border-radius: 4px;
@@ -42,17 +43,17 @@
     justify-content: space-between;
 }
 
-.main .menu .accordion li {
+.menu .accordion li {
     list-style: none;
 }
 
-.main .menu .accordion .arrow-menu {
+.menu .accordion .arrow-menu {
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 
-.main .menu .accordion .link {
+.menu .accordion .link {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -70,25 +71,25 @@
     padding-left: 35px;
 }
 
-.main .menu .accordion .link .menu-icon {
+.menu .accordion .link .menu-icon {
     position: absolute;
     left: 0;
 }
 
-.main .menu .accordion .link .arrow-menu {
+.menu .accordion .link .arrow-menu {
     position: absolute;
     right: 0;
 }
 
-.main .menu .accordion li:last-child .link {
+.menu .accordion li:last-child .link {
     border-bottom: 0;
 }
 
-.main .menu .accordion li.open .link {
+.menu .accordion li.open .link {
     color: #393185;
 }
 
-.main .menu .accordion li.open .arrow-menu {
+.menu .accordion li.open .arrow-menu {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
@@ -100,16 +101,16 @@
    * Submenu
    -----------------------------*/
 
-.main .menu .submenu {
+.menu .submenu {
     display: none;
     font-size: 14px;
 }
 
-.main .menu .submenu li {
+.menu .submenu li {
     margin: 10px 0;
 }
 
-.main .menu .submenu a {
+.menu .submenu a {
     display: block;
     text-decoration: none;
     color: #000000;
@@ -118,7 +119,7 @@
     transition: all 0.25s ease;
 }
 
-.main .menu .submenu a:hover {
+.menu .submenu a:hover {
     background: #393185;
     color: #FFF;
 }
