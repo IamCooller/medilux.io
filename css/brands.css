@@ -31,6 +31,11 @@
     object-fit: contain;
     display: block;
     margin: 0 auto;
+    transition: .3s;
+}
+
+.brands .brands-slick img:hover {
+    filter: grayscale(1);
 }
 
 .brands .brands-slick .slick-arrow-prev {
