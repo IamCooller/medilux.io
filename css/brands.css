@@ -32,10 +32,11 @@
     display: block;
     margin: 0 auto;
     transition: .3s;
+    filter: grayscale(1);
 }
 
 .brands .brands-slick img:hover {
-    filter: grayscale(1);
+    filter: grayscale(0);
 }
 
 .brands .brands-slick .slick-arrow-prev {

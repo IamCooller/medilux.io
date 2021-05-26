@@ -7,8 +7,9 @@
     border-radius: 3px;
     padding-right: 5px;
     padding-bottom: 30px;
-    position: absolute;
-    left: -270px;
+    position: fixed;
+    margin-left: -270px;
+    z-index: 99;
 }
 
 .main .menu .logo img {
