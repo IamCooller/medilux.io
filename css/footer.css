@@ -1,0 +1,92 @@
+    .footer {
+        background: #4B5761;
+        padding: 30px 0 40px 0;
+    }
+    
+    .footer .footer__logo {
+        width: fit-content;
+        position: absolute;
+        left: -16vw;
+    }
+    
+    .footer .containers {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer .footer__menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 600px;
+    }
+    
+    .footer .footer__menu ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .footer .footer__menu ul li {
+        list-style: none;
+    }
+    
+    .footer .footer__menu ul li a {
+        font-family: "Futura PT";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .footer .footer__additional .footer__additional-top-tel a {
+        font-family: "Microsoft JhengHei";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .footer .footer__additional .footer__additional-top-tel {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .footer .footer__additional .footer__additional-top-mail a {
+        font-family: "Microsoft JhengHei";
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    
+    .footer .footer__additional .footer__additional-top-mail {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .footer .footer__additional .footer__additional-top-mail a {
+        font-family: "Microsoft JhengHei";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    
+    .footer .footer__additional .footer__additional-social a {
+        margin-right: 20px;
+        text-decoration: none;
+    }

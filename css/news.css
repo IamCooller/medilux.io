@@ -1,0 +1,105 @@
+.news {
+    background: #FFFFFF;
+    padding: 60px 0 30px 0;
+}
+
+.news .title {
+    margin-bottom: 30px;
+}
+
+.news .news__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news .news__list .news__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 270px;
+    background: #FFFFFF;
+    border: 1px solid #EDECF2;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-top: 12px;
+}
+
+.news .news__list .news__item .news__item-title {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    max-width: 137px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.news .news__list .news__item {
+    width: 100%;
+}
+
+.news .news__list .news__item p {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin: 15px auto;
+    max-width: 222px;
+}
+
+.news .news__list .news__item .news__item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.news .news__list .news__item .news__item-bottom .news__item-data {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #898989;
+}
+
+.news .news__list .news__item .news__item-bottom a {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #393185;
+    text-decoration: none;
+}
+
+.news .news__list .news__item .news__item-bottom svg {
+    margin-left: 8px;
+}
+
+.news .news__more {
+    display: flex;
+    align-items: center;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #393185;
+    margin-top: 30px;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+
+.news .news__more svg {
+    margin-left: 8px;
+}

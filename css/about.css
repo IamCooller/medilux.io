@@ -1,0 +1,70 @@
+.about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.about .about-left {
+    width: 50vw;
+}
+
+.about .about-right {
+    width: 50vw;
+    position: relative;
+}
+
+.about .about-right .title {
+    margin-bottom: 30px;
+}
+
+.about-right-content {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    padding: 60px 60px 30px 60px;
+    left: -30px;
+    background: url(../img/about2.png) center no-repeat;
+    background-size: cover;
+}
+
+.about .about-right .about-right-content .about-right-content-center {
+    max-width: 570px;
+}
+
+.about .about-right .about-right-content p {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.about .about-right .about-right-content p:last-child {
+    margin-bottom: 0;
+}
+
+.about .about-right .about-right-content a {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #393185;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+}
+
+.about-right-bg {
+    position: absolute;
+    top: -26px;
+    z-index: 0;
+    left: -30px;
+}
+
+.about-right-bg img {
+    width: 100%;
+}

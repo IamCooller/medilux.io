@@ -1,0 +1,120 @@
+.main .menu {
+    display: table;
+    width: 270px;
+    background: #FFFFFF;
+    border: 1px solid #EDECF2;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+    position: absolute;
+    left: -270px;
+}
+
+.main .menu .logo img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    max-width: 227px;
+}
+
+.main .menu .accordion {
+    margin: 0;
+    padding: 0;
+}
+
+.main .menu .accordion {
+    width: 100%;
+    background: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: 30px;
+    max-height: 442px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 13px;
+}
+
+.main .menu .accordion li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.main .menu .accordion .arrow-menu {
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.main .menu .accordion .link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000000;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-right: 10px;
+    padding-left: 35px;
+}
+
+.main .menu .accordion .link .menu-icon {
+    position: absolute;
+    left: 0;
+}
+
+.main .menu .accordion .link .arrow-menu {
+    position: absolute;
+    right: 0;
+}
+
+.main .menu .accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.main .menu .accordion li.open .link {
+    color: #393185;
+}
+
+.main .menu .accordion li.open .arrow-menu {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/**
+   * Submenu
+   -----------------------------*/
+
+.main .menu .submenu {
+    display: none;
+    font-size: 14px;
+}
+
+.main .menu .submenu li {
+    border-bottom: 1px solid #4b4a5e;
+}
+
+.main .menu .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.main .menu .submenu a:hover {
+    background: #393185;
+    color: #FFF;
+}

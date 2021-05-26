@@ -1,0 +1,62 @@
+@import url(fonts/fonts.css);
+@import url(css/normilaze.css);
+@import url(css/slick.css);
+@import url(css/bootstrap.min.css);
+@import url(css/menu.css);
+@import url(css/main.css);
+@import url(css/brands.css);
+@import url(css/about.css);
+@import url(css/specialOffer.css);
+@import url(css/feedback.css);
+@import url(css/news.css);
+@import url(css/footer.css);
+body {
+    background: #FAFAFA;
+    font-family: 'Futura PT';
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #DBDBDB;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393185;
+    border-radius: 3px;
+    height: 30px;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    display: none;
+}
+
+.title {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 450;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #393185;
+}
+
+.containers {
+    max-width: 870px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
