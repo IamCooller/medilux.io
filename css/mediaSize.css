@@ -11,35 +11,3 @@
 .container.option {
     padding-left: 325px;
 }
-
-@media(max-width:1440px) {
-    .main header .header-top form {
-        max-width: 230px;
-    }
-    .main header .header-top .header-top__menu li a {
-        font-size: 15px;
-    }
-    .specialOffers .specialOffers__list {
-        gap: 10px;
-    }
-    .specialOffers .specialOffers__list .specialOffers__list-item a {
-        max-width: 115px;
-    }
-    .feedback .feedback-input {
-        max-width: 135px;
-    }
-    .feedback-button {
-        max-width: 135px;
-    }
-    .news .news__list .news__item {
-        max-width: 200px;
-    }
-    .footer .footer__logo {
-        left: -22vw;
-    }
-    .footer .footer__menu {
-        width: 390px;
-    }
-}
-
-@media (max-width:990px) {}

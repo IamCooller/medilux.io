@@ -10,10 +10,11 @@
     flex-wrap: wrap;
     padding-top: 15px;
     padding-left: 23px;
+    padding-right: 23px;
 }
 
 .main header .header-top form {
-    max-width: 461px;
+    max-width: 56%;
     width: 100%;
     position: relative;
 }
