@@ -3,6 +3,10 @@
     overflow: hidden;
 }
 
+.main .containers {
+    max-width: 900px;
+}
+
 .main header .header-top {
     display: flex;
     justify-content: space-between;
