@@ -22,9 +22,6 @@
     .specialOffers .specialOffers__list {
         gap: 10px;
     }
-    .specialOffers .specialOffers__list .specialOffers__list-item {
-        max-width: 147px;
-    }
     .specialOffers .specialOffers__list .specialOffers__list-item a {
         max-width: 115px;
     }

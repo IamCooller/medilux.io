@@ -8,14 +8,14 @@
 }
 
 .specialOffers .specialOffers__list {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     gap: 31px;
     align-items: center;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .specialOffers .specialOffers__list .specialOffers__list-item {
-    max-width: 23%;
     width: 100%;
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
