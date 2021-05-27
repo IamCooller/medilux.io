@@ -8,6 +8,177 @@
     color: #393185;
 }
 
+.container {
+    padding-left: 310px;
+    max-width: 100% !important;
+}
+
 .container.option {
     padding-left: 325px;
+}
+
+@media(min-width:1440px) {
+    .main header .main__banner .main__banner-item h2,
+    .main header .main__banner .main__banner-item .main__banner-item-description {
+        max-width: 100%;
+    }
+    .main header .main__banner .main__banner-item {
+        min-height: 465px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .specialOffers .specialOffers__list {
+        grid-template-columns: repeat(3, 1fr)
+    }
+    .menu {
+        width: 270px;
+    }
+    .container.option {
+        padding-left: 285px;
+    }
+    .container {
+        padding-left: 270px;
+    }
+    .main header .header-top form {
+        max-width: 35%;
+    }
+    .main header .header-top .header-top__menu li a {
+        font-size: 16px;
+    }
+    .about-right-content {
+        padding: 30px;
+        left: -150px;
+    }
+    .feedback .feedback-input {
+        max-width: 28%;
+    }
+    .footer__logo img {
+        width: 100%;
+    }
+    .footer .footer__menu ul li a {
+        font-size: 11px;
+    }
+    .footer .footer__additional .footer__additional-top-tel a {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .footer .footer__additional .footer__additional-top-tel,
+    .footer .footer__additional .footer__additional-top-mail {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:990px) {
+    .container {
+        padding-left: 0px;
+    }
+    .container.option {
+        padding-left: 15px;
+    }
+    .mobile__button {
+        display: block;
+    }
+    .menu {
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    .open {
+        transform: none;
+    }
+    .main header .main__banner .slick-dots {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+@media(max-width:770px) {
+    .specialOffers .specialOffers__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main header .header-top form {
+        max-width: 69%;
+    }
+    .main header .header-top .header-top__menu li a {
+        font-size: 12px;
+    }
+    .brands {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .about-right-content {
+        left: -100%;
+    }
+    .footer .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footer__menu {
+        gap: 30px;
+        margin: 30px 0;
+        justify-content: center;
+    }
+    .footer__logo {
+        max-width: 250px;
+    }
+    .footer__additional {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .feedback .feedback-form {
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        gap: 30px;
+    }
+    .feedback .feedback-input {
+        max-width: 50%;
+    }
+    .news .news__list {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .news .news__list .news__item {
+        width: 100%;
+    }
+    .specialOffers .specialOffers__list .specialOffers__list-item {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:570px) {
+    .specialOffers .specialOffers__list {
+        grid-template-columns: auto;
+    }
+    .btn {
+        font-size: 11px;
+        max-width: 125px;
+    }
+    .main header .header-top {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main header .header-top .header-top__menu {
+        flex-wrap: wrap;
+    }
+    .main header .main__banner .main__banner-item h2 {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .main header .main__banner .main__banner-item .main__banner-item-description h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .main header .main__banner .main__banner-item .main__banner-item-description h4 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .feedback .feedback-input {
+        max-width: 100%;
+    }
 }

@@ -123,3 +123,24 @@
     background: #393185;
     color: #FFF;
 }
+
+.mobile__button {
+    display: none;
+    fill: #393185;
+}
+
+.mobile__button:hover .menu {
+    display: block !important;
+}
+
+.menu__mobile-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    will-change: opacity;
+}

@@ -40,7 +40,8 @@
 }
 
 .feedback .feedback-input {
-    max-width: 225px;
+    max-width: 45%;
+    width: 100%;
 }
 
 .feedback .feedback-input input {
