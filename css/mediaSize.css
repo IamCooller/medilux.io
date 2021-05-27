@@ -145,7 +145,7 @@
         width: 100%;
     }
     .specialOffers .specialOffers__list .specialOffers__list-item {
-        max-width: 50%;
+        max-width: 80%;
         margin: 0 auto;
     }
 }
