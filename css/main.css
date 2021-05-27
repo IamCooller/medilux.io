@@ -48,6 +48,7 @@
     border-radius: 0px 3px 3px 0px;
     height: 100%;
     text-align: center;
+    transition: .3s;
     width: 48px;
     right: 0;
 }
@@ -58,6 +59,18 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+
+.main header .header-top form button:hover {
+    background: none;
+    border: 1px solid #393185;
+    box-sizing: border-box;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.main header .header-top form button:hover svg path {
+    fill: #393185;
+    color: #393185;
 }
 
 .main header .header-top .header-top__additional a {
@@ -89,10 +102,13 @@
     text-align: center;
     color: #FFFFFF;
     outline: none;
+    transition: .3s;
 }
 
 .btn:hover {
-    color: #FFFFFF;
+    color: #393185;
+    background: none;
+    border: 2px solid #393185;
 }
 
 .main header .header-top .header-top__menu {
