@@ -39,6 +39,25 @@
         text-decoration: none;
     }
     
+    .footer__logo img {
+        width: 100%;
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    .footer__logo a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        display: block;
+        margin: 0 auto;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    
     .footer__additional {
         margin-right: 30px;
     }
