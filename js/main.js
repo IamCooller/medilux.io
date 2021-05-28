@@ -104,8 +104,81 @@ $(document).ready(function() {
                 adaptiveHeight: true,
                 autoplay: true,
             });
-
-
         }
+
     });
+
+
+
+
+    var didScroll, lastScrollTop = 0,
+        delta = 5,
+        navbarHeight = $(".header-top").outerHeight() / 4;
+
+    function hasScrolled() {
+        var e = $(this).scrollTop();
+        Math.abs(lastScrollTop - e) <= delta || (e > lastScrollTop && e > navbarHeight ? $(".header-top").removeClass("nav-down").addClass("nav-up") : (e + $(window).height() < $(document).height() && $(".header-top").removeClass("nav-up").addClass("nav-down"), e < navbarHeight && $(".header-top").removeClass("nav-down")), lastScrollTop = e)
+    }
+
+    function setSameHeight() {
+        var e, t, n, o, a = 0,
+            i = 0,
+            r = [],
+            c = 0;
+        $(".sameHeight").each(function() {
+            if ((t = $(this)).css("height", "auto"), n = t.height(), c = t.offset().top, i != c) r.length = 0, i = c, a = n, t.height(a), r.push(t);
+            else if (r.push(t), e = r.length, a < n)
+                for (a = n, o = 0; o < e; o++) r[o].height(a);
+            else t.height(a)
+        })
+    }
+
+    function scrollToElementCentered(e) { $("html,body").animate({ scrollTop: e.offset().top - ($(window).height() - e.outerHeight(!0)) / 2 }, 400) }
+
+    function getCookie(e) {
+        for (var t = e + "=", n = decodeURIComponent(document.cookie).split(";"), o = 0; o < n.length; o++) {
+            for (var a = n[o];
+                " " == a.charAt(0);) a = a.substring(1);
+            if (0 == a.indexOf(t)) return a.substring(t.length, a.length)
+        }
+        return ""
+    }
+
+    function setCookie(e, t, n) {
+        var o = new Date;
+        o.setTime(o.getTime() + 24 * n * 60 * 60 * 1e3);
+        var a = "expires=" + o.toUTCString();
+        document.cookie = e + "=" + t + ";" + a + ";path=/;"
+    }
+
+    function deleteCookie(e) { document.cookie = e + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/;" }
+    $(window).scroll(function(e) { didScroll = !0 }), setInterval(function() { didScroll && (hasScrolled(), didScroll = !1) }, 250), $(hasScrolled), $(document).ready(function() { setSameHeight(), $(window).on("resize", function(e) { setSameHeight() }), $(window).on("orientationchange", function(e) { setSameHeight() }) }), $(document).ready(function() {
+        document.cookie.indexOf("accept_cookies") > -1 && $("#any-cookieBar, #btnCookieBarPlaceholder").hide(), $("#any-cookieBar-close").change(function() {
+            var e = new Date;
+            e.setTime(e.getTime() + 31536e6), document.cookie = "accept_cookies=true; expires=" + e.toGMTString() + "; path=/; domain=.anydesk.com", $("#btnCookieBarPlaceholder").hide()
+        })
+    }), $(function() { $(window).scroll(function() { $(this).scrollTop() > 500 ? $("#any-backToTop").show().removeClass("fadeOutRight").addClass("fadeInRight") : $(this).scrollTop() < 500 && $("#any-backToTop").removeClass("fadeInRight").addClass("fadeOutRight") }), $("#any-backToTop").click(function() { return $("html, body").animate({ scrollTop: 0 }, 600, function() { window.location.hash = "" }), !1 }) }), $(document).ready(function() { $('a[rel="relativeanchor"]').click(function() { return $("html, body").animate({ scrollTop: $($.attr(this, "href")).offset().top }, 800), !1 }) }), document.addEventListener("DOMContentLoaded", function() {
+        var e = [].slice.call(document.querySelectorAll("img.lazy")),
+            t = !1,
+            n = function() {
+                !1 === t && (t = !0, e.forEach(function(t) {
+                    if (t.getBoundingClientRect().top - 200 <= window.innerHeight && t.getBoundingClientRect().bottom >= 0 && "none" !== getComputedStyle(t).display) {
+                        var o = t.dataset.imgSrc.split("width");
+                        if (o) {
+                            "" == o[o.length - 1] && o.pop();
+                            for (var a = [], i = 0; i < o.length; i++) {-1 == (c = o[i].trim().split(" "))[0].indexOf(".webp") && a.push({ path: c[0], size: c[1] }) }
+                            a = a.sort(function(e, t) { return e.size < t.size ? 1 : e.size > t.size ? -1 : 0 });
+                            var r = !1;
+                            for (i = 0; i < a.length; i++) {
+                                var c = a[i];
+                                screen.width <= c.size && (t.src = c.path, r = !0)
+                            }
+                            r || (t.src = t.dataset.src)
+                        } else t.src = t.dataset.src;
+                        t.classList.remove("lazy"), 0 === (e = e.filter(function(e) { return e !== t })).length && (document.removeEventListener("scroll", n), window.removeEventListener("resize", n), window.removeEventListener("orientationchange", n))
+                    }
+                }), t = !1)
+            };
+        document.addEventListener("scroll", n), window.addEventListener("resize", n), window.addEventListener("orientationchange", n), n()
+    }), $(".navbar-toggler").click(function(e) { "true" == $(this).attr("aria-expanded") && ($(".navbar").find(".any-arrow-dropdown-menu-mobile").hide(), $(".navbar-bg").hide()), "false" == $(this).attr("aria-expanded") && ($(".navbar").find(".any-arrow-dropdown-menu-mobile").show(), $(".navbar-bg").show()), e.preventDefault() }), $(".navbar-bg").click(function(e) { $(e.target).is(".navbar-collapse") || $(".navbar-collapse").collapse("hide"), $(".navbar").find(".any-arrow-dropdown-menu-mobile").hide(), $(this).hide() }), $(document).ready(function() { $(".card-header-accordion").click(function(e) { $(this).removeClass("initial-load") }) }), $(function() { window.setTimeout(function() { $(".any-bubbleBadge").show(), $(".any-bubbleBadge-template").show(), $(".any-bubbleBadge-newLicenses").show(), $(".any-bubbleBadge-landingPageHeader").show() }, 1e3) }), $(document).ready(function() { $("[data-href]").click(function() { return window.location.href = $(this).data("href"), !1 }), $("[data-href-tab]").click(function() { return window.open($(this).data("href-tab"), "_blank"), !1 }), $("[data-href], [data-href-tab]").addClass("cursor-pointer") }), $("#alertClose").click(function() { $("#alertMessage").slideUp(300, function() { $(this).alert("close") }) }), $(document).ready(function() { $("[data-cookie-value]").each(function() { $(this).val(getCookie($(this).data("cookie-value"))), $(this).removeAttr("data-cookie-value") }) });
 });

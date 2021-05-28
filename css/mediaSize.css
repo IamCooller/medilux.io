@@ -46,6 +46,9 @@
     .menu {
         width: 270px;
     }
+    .main header .header-top {
+        width: calc(100% - 270px);
+    }
     .container.option {
         padding-left: 285px;
     }
@@ -90,6 +93,12 @@
     }
     .mobile__button {
         display: block;
+    }
+    .main header .header-top {
+        width: 100%;
+    }
+    .main header .header-top .header-top__additional a {
+        font-size: 12px;
     }
     .menu {
         -webkit-font-smoothing: antialiased;

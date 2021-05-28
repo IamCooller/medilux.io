@@ -20,10 +20,22 @@
     padding-top: 15px;
     padding-left: 23px;
     padding-right: 23px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: fit-content;
+    z-index: 9;
+    right: 0;
+    width: calc(100% - 310px);
+    transition: all .5s ease;
+}
+
+.nav-up {
+    top: -174px !important;
 }
 
 .main header .header-top form {
-    max-width: 55%;
+    max-width: 46%;
     width: 100%;
     position: relative;
 }
@@ -108,7 +120,7 @@
     font-family: "Futura PT";
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 15px;
     color: #000000;
     text-decoration: none;
@@ -185,6 +197,7 @@
     display: grid;
     position: relative;
     width: 100vw;
+    margin-top: 100px;
 }
 
 .main header .main__banner .main__banner-item {
