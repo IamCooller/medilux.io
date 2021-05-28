@@ -8,18 +8,32 @@
 }
 
 .news .news__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .news .news__list .news__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 32%;
     background: #FFFFFF;
     border: 1px solid #EDECF2;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 3px;
     padding-top: 12px;
@@ -54,8 +68,14 @@
 }
 
 .news .news__list .news__item .news__item-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 15px;
     padding-top: 0;
@@ -86,7 +106,11 @@
 }
 
 .news .news__more {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: "Futura PT";
     font-style: normal;
@@ -97,9 +121,47 @@
     color: #393185;
     margin-top: 30px;
     text-decoration: none;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
 .news .news__more svg {
     margin-left: 8px;
+}
+
+.news .news__list .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.news .news__list .slick-dots li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.news .news__list .slick-dots li:last-child {
+    margin-right: 0;
+}
+
+.news .news__list .slick-dots li button {
+    background: none;
+    border: none;
+    font-size: 0;
+    background: #DBDBDB;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+}
+
+.news .news__list .slick-dots li.slick-active button {
+    background: #393185;
 }

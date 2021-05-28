@@ -25,11 +25,23 @@
     .main header .main__banner .main__banner-item {
         min-height: 465px;
     }
+    .header-top__additional {
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 15px;
+        -ms-grid-columns: 1fr 15px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feedback .feedback-input {
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 1200px) {
     .specialOffers .specialOffers__list {
-        grid-template-columns: repeat(3, 1fr)
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     }
     .menu {
         width: 270px;
@@ -81,15 +93,27 @@
     }
     .menu {
         -webkit-font-smoothing: antialiased;
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
         transform-origin: 0% 0%;
+        -webkit-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
         transform: translate(-100%, 0);
+        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
     .open {
+        -webkit-transform: none;
+        -ms-transform: none;
         transform: none;
     }
     .main header .main__banner .slick-dots {
         margin-left: 0;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding: 0;
     }
@@ -103,9 +127,6 @@
 }
 
 @media(max-width:770px) {
-    .specialOffers .specialOffers__list {
-        grid-template-columns: repeat(2, 1fr);
-    }
     .main header .header-top form {
         max-width: 69%;
     }
@@ -120,14 +141,28 @@
         left: -100%;
     }
     .footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .footer .footer__menu {
-        gap: 30px;
+        grid-gap: 30px;
+        display: -ms-grid;
+        display: grid;
         margin: 30px 0;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        text-align: center;
+        -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
     .footer__logo {
         max-width: 250px;
@@ -137,17 +172,34 @@
         text-align: center;
     }
     .feedback .feedback-form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         height: 100%;
         text-align: center;
-        gap: 30px;
+    }
+    .feedback .feedback-description {
+        margin-bottom: 30px;
     }
     .feedback .feedback-input {
         max-width: 50%;
+        margin-bottom: 30px;
     }
     .news .news__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        gap: 30px;
     }
     .news .news__list .news__item {
         width: 100%;
@@ -156,10 +208,16 @@
         max-width: 80%;
         margin: 0 auto;
     }
+    .specialOffers .specialOffers__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
 
 @media(max-width:570px) {
     .specialOffers .specialOffers__list {
+        -ms-grid-columns: auto;
         grid-template-columns: auto;
     }
     .btn {
@@ -171,12 +229,12 @@
         padding-right: 10px;
     }
     .main header .header-top .header-top__menu {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .main header .main__banner .main__banner-item h2 {
         font-size: 30px;
         line-height: 35px;
-        text-align: center;
     }
     .main header .main__banner .main__banner-item .main__banner-item-description h3 {
         font-size: 20px;

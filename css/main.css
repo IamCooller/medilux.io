@@ -1,12 +1,21 @@
 .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
 }
 
 .main header .header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 15px;
     padding-left: 23px;
@@ -14,7 +23,7 @@
 }
 
 .main header .header-top form {
-    max-width: 56%;
+    max-width: 55%;
     width: 100%;
     position: relative;
 }
@@ -23,6 +32,7 @@
     width: 100%;
     height: 39px;
     border: 1px solid #393185;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 3px;
     padding-left: 11px;
@@ -34,6 +44,22 @@
     font-size: 14px;
     line-height: 18px;
     color: #000;
+}
+
+.main header .header-top form input::-webkit-input-placeholder {
+    color: #898989;
+}
+
+.main header .header-top form input::-moz-placeholder {
+    color: #898989;
+}
+
+.main header .header-top form input:-ms-input-placeholder {
+    color: #898989;
+}
+
+.main header .header-top form input::-ms-input-placeholder {
+    color: #898989;
 }
 
 .main header .header-top form input::placeholder {
@@ -48,6 +74,8 @@
     border-radius: 0px 3px 3px 0px;
     height: 100%;
     text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     width: 48px;
     right: 0;
@@ -58,12 +86,15 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
 
 .main header .header-top form button:hover {
     background: none;
     border: 1px solid #393185;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 0px 3px 3px 0px;
 }
@@ -102,6 +133,8 @@
     text-align: center;
     color: #FFFFFF;
     outline: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -114,10 +147,16 @@
 .main header .header-top .header-top__menu {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     display: flex;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     margin: 10px 0;
@@ -142,6 +181,7 @@
 }
 
 .main header .main__banner {
+    display: -ms-grid;
     display: grid;
     position: relative;
     width: 100vw;
@@ -149,10 +189,20 @@
 
 .main header .main__banner .main__banner-item {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 65px 24px;
     height: 100%;
@@ -206,15 +256,23 @@
 }
 
 .main header .main__banner .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    gap: 10px;
     margin: 0;
     margin-left: 30%
 }
 
 .main header .main__banner .slick-dots li {
     list-style: none;
+    margin-right: 10px;
+}
+
+.main header .main__banner .slick-dots li:last-child {
+    margin-right: 0;
 }
 
 .main header .main__banner .slick-dots li button {
