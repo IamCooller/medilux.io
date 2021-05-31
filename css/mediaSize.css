@@ -15,6 +15,7 @@
 
 .container.option {
     padding-left: 325px;
+    padding-right: 15px;
 }
 
 @media(min-width:1440px) {
@@ -36,6 +37,9 @@
         -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     }
+    .about .about-right .about-right-content .about-right-content-center {
+        max-width: 666px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -49,7 +53,8 @@
     .main header .header-top {
         width: calc(100% - 270px);
     }
-    .container.option {
+    .container.option,
+    .about {
         padding-left: 285px;
     }
     .container {
@@ -63,7 +68,7 @@
     }
     .about-right-content {
         padding: 30px;
-        left: -150px;
+        left: -70%;
     }
     .feedback .feedback-input {
         max-width: 28%;
@@ -88,7 +93,8 @@
     .container {
         padding-left: 0px;
     }
-    .container.option {
+    .container.option,
+    .about {
         padding-left: 15px;
     }
     .mobile__button {
@@ -146,8 +152,12 @@
         margin-top: 30px;
         margin-bottom: 50px;
     }
+    .about {
+        padding-left: 0;
+    }
     .about-right-content {
         left: -100%;
+        width: 100vw;
     }
     .footer .container {
         -webkit-box-orient: vertical;
