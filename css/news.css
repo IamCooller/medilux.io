@@ -63,8 +63,7 @@
     font-size: 14px;
     line-height: 18px;
     color: #000000;
-    margin: 15px auto;
-    max-width: 222px;
+    padding: 15px;
 }
 
 .news .news__list .news__item .news__item-bottom {
