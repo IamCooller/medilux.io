@@ -7,7 +7,8 @@
     align-items: center;
     width: 100%;
     overflow-x: hidden;
-    padding-left: -325px;
+    background: url(../img/about2.png) center no-repeat;
+    background-size: cover;
 }
 
 .about .about-right {
@@ -25,8 +26,6 @@
     width: 100vw;
     padding: 60px;
     padding-left: 0;
-    background: url(../img/about2.png) center no-repeat;
-    background-size: cover;
 }
 
 .about .about-right .about-right-content .about-right-content-center {
