@@ -23,14 +23,13 @@
 .about-right-content {
     position: relative;
     z-index: 1;
-    width: 100vw;
-    padding: 60px;
-    padding-left: 0;
+    padding: 60px 10px;
 }
 
 .about .about-right .about-right-content .about-right-content-center {
     max-width: 60vw;
     position: relative;
+    margin: 0 auto;
 }
 
 .about .about-right .about-right-content p {
@@ -51,21 +50,10 @@
     font-family: "Futura PT";
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     color: #393185;
     text-decoration: none;
     position: absolute;
     right: 0;
-}
-
-.about-right-bg {
-    position: absolute;
-    top: -26px;
-    z-index: 0;
-    left: -30px;
-}
-
-.about-right-bg img {
-    width: 100%;
 }
