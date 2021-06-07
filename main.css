@@ -1,0 +1,302 @@
+.main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+}
+
+.main header .header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-left: 23px;
+    padding-right: 23px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: fit-content;
+    z-index: 9;
+    right: 0;
+    width: calc(100% - 310px);
+    transition: all .5s ease;
+}
+
+.main header .header-top form {
+    max-width: 46%;
+    width: 100%;
+    position: relative;
+}
+
+.main header .header-top form input {
+    width: 100%;
+    height: 39px;
+    border: 1px solid #393185;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-left: 11px;
+    padding-right: 49px;
+    outline: none;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+}
+
+.main header .header-top form input::-webkit-input-placeholder {
+    color: #898989;
+}
+
+.main header .header-top form input::-moz-placeholder {
+    color: #898989;
+}
+
+.main header .header-top form input:-ms-input-placeholder {
+    color: #898989;
+}
+
+.main header .header-top form input::-ms-input-placeholder {
+    color: #898989;
+}
+
+.main header .header-top form input::placeholder {
+    color: #898989;
+}
+
+.main header .header-top form button {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: #393185;
+    border-radius: 0px 3px 3px 0px;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    width: 48px;
+    right: 0;
+    z-index: 9;
+}
+
+.main header .header-top form button svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.main header .header-top form button:hover {
+    background: none;
+    border: 1px solid #393185;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0px 3px 3px 0px;
+}
+
+.main header .header-top form button:hover svg path {
+    fill: #393185;
+    color: #393185;
+}
+
+.main header .header-top .header-top__additional a {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main header .header-top .header-top__additional .tel a {
+    font-weight: bold;
+    line-height: 14px;
+}
+
+.btn {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    background: #393185;
+    border-radius: 3px;
+    max-width: 159px;
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    outline: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.btn:hover {
+    color: #393185;
+    background: none;
+    border: 2px solid #393185;
+}
+
+.main header .header-top .header-top__menu {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    margin-right: auto;
+    max-width: 710px;
+}
+
+.main header .header-top .header-top__menu li {
+    list-style: none;
+}
+
+.main header .header-top .header-top__menu li a {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main header .header-top .header-top__menu li.active a {
+    color: #E31717;
+}
+
+.main header .main__banner {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    width: 100vw;
+}
+
+.main header .main__banner .main__banner-item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 65px 24px;
+    height: 100%;
+}
+
+.main header .main__banner .main__banner-item h2 {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 450;
+    font-size: 55px;
+    line-height: 65px;
+    max-width: 450px;
+    text-transform: uppercase;
+    color: #393185;
+}
+
+.main header .main__banner .main__banner-item .main__banner-item-description {
+    max-width: 485px;
+    padding-left: 30px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.main header .main__banner .main__banner-item .main__banner-item-description::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 5px;
+    background: #393185;
+    height: 100%;
+}
+
+.main header .main__banner .main__banner-item .main__banner-item-description h3 {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.main header .main__banner .main__banner-item .main__banner-item-description h4 {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.main header .main__banner .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 30%
+}
+
+.main header .main__banner .slick-dots li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.main header .main__banner .slick-dots li:last-child {
+    margin-right: 0;
+}
+
+.main header .main__banner .slick-dots li button {
+    background: none;
+    border: none;
+    font-size: 0;
+    background: #DBDBDB;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+}
+
+.main header .main__banner .slick-dots li.slick-active button {
+    background: #393185;
+}

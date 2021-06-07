@@ -1,0 +1,147 @@
+.specialOffers {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.specialOffers .title {
+    margin-bottom: 30px;
+}
+
+.specialOffers .specialOffers__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-grid-columns: 1fr 31px 1fr 31px 1fr 31px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialOffers .specialOffers__list .specialOffers__list-item {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    min-height: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.specialOffers .specialOffers__list .specialOffers__list-item p {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    max-width: 142px;
+    margin: 0 auto;
+}
+
+.specialOffers .specialOffers__list .specialOffers__list-item a {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    background: #393185;
+    border-radius: 3px;
+    color: #FFFFFF;
+    text-align: center;
+    height: 36px;
+    max-width: 159px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.specialOffers .specialOffers__paggination a {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    color: #393185;
+    text-decoration: none;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.specialOffers .specialOffers__paggination svg {
+    margin-left: 5px;
+}
+
+.specialOffers .specialOffers__list .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.specialOffers .specialOffers__list .slick-dots li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.specialOffers .specialOffers__list .slick-dots li:last-child {
+    margin-right: 0;
+}
+
+.specialOffers .specialOffers__list .slick-dots li button {
+    background: none;
+    border: none;
+    font-size: 0;
+    background: #DBDBDB;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+}
+
+.specialOffers .specialOffers__list .slick-dots li.slick-active button {
+    background: #393185;
+}
