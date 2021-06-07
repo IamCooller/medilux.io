@@ -96,9 +96,14 @@
     padding-left: 35px;
 }
 
+.menu .accordion .link:hover {
+    text-decoration: underline;
+}
+
 .menu .accordion .link .menu-icon {
     position: absolute;
     left: 0;
+    max-width: 23px;
 }
 
 .menu .accordion .link .arrow-menu {

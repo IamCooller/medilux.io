@@ -31,7 +31,11 @@
 }
 
 .nav-up {
-    top: -174px !important;
+    top: -90px !important;
+}
+
+.nav-up:hover {
+    top: 0 !important
 }
 
 .main header .header-top form {
@@ -91,6 +95,7 @@
     transition: .3s;
     width: 48px;
     right: 0;
+    z-index: 9;
 }
 
 .main header .header-top form button svg {
@@ -172,6 +177,8 @@
     align-items: center;
     width: 100%;
     margin: 10px 0;
+    margin-right: auto;
+    max-width: 710px;
 }
 
 .main header .header-top .header-top__menu li {
@@ -197,7 +204,6 @@
     display: grid;
     position: relative;
     width: 100vw;
-    margin-top: 100px;
 }
 
 .main header .main__banner .main__banner-item {

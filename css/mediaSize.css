@@ -18,6 +18,10 @@
     padding-right: 15px;
 }
 
+body {
+    padding-top: 100px;
+}
+
 @media(min-width:1440px) {
     .main header .main__banner .main__banner-item h2,
     .main header .main__banner .main__banner-item .main__banner-item-description {
@@ -269,8 +273,8 @@
     .feedback .feedback-input {
         max-width: 100%;
     }
-    .main header .main__banner {
-        margin-top: 150px;
+    body {
+        padding-top: 150px;
     }
     .aboutMain__reason li {
         max-width: 100%;
