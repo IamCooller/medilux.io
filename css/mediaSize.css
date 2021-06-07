@@ -63,10 +63,6 @@ body {
     .main header .header-top {
         width: calc(100% - 270px);
     }
-    .container.option,
-    .about {
-        padding-left: 285px;
-    }
     .container {
         padding-left: 270px;
     }

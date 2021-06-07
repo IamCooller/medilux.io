@@ -24,6 +24,7 @@
     z-index: 1;
     width: 100vw;
     padding: 60px;
+    padding-left: 0;
     background: url(../img/about2.png) center no-repeat;
     background-size: cover;
 }
