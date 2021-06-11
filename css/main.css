@@ -102,7 +102,7 @@
 
 .main header .header-top form button:hover {
     background: none;
-    border: 1px solid #393185;
+    border: 2px solid #393185;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 0px 3px 3px 0px;
@@ -126,6 +126,11 @@
 .main header .header-top .header-top__additional .tel a {
     font-weight: bold;
     line-height: 14px;
+}
+
+.main header .header-top .header-top__additional svg {
+    position: relative;
+    top: -3px;
 }
 
 .btn {
@@ -189,6 +194,10 @@
 
 .main header .header-top .header-top__menu li.active a {
     color: #E31717;
+}
+
+.main header .header-top .header-top__menu li a.active_link {
+    border-bottom: 1px solid;
 }
 
 .main header .main__banner {

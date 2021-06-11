@@ -249,6 +249,28 @@ body {
     .catalogs__item {
         max-width: 100%;
     }
+    .caralogMore {
+        margin: 65px 0;
+    }
+    .Offers__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .catalogs__option {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .specialOffers .specialOffers__list .slick-dots,
+    .news .news__list .slick-dots {
+        position: absolute;
+        bottom: -70px;
+    }
+    .specialOffers__paggination {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    .news .news__more {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 
 @media(max-width:570px) {
@@ -293,6 +315,24 @@ body {
     .aboutMain__title p {
         font-size: 16px;
         line-height: 23px;
+    }
+    .catalogMore__filters {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .caralogMore {
+        margin: auto;
+    }
+    .Offers__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .catalogs__option {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .title {
+        text-align: center;
+    }
+    .about-right-content {
+        padding: 30px 10px;
     }
 }
 
