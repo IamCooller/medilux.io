@@ -11,11 +11,12 @@
 .container {
     padding-left: 310px;
     max-width: 100% !important;
+    padding-right: 40px;
 }
 
 .container.option {
     padding-left: 350px;
-    padding-right: 15px;
+    padding-right: 40px;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 @media(min-width:1440px) {
     .main header .main__banner .main__banner-item h2,
     .main header .main__banner .main__banner-item .main__banner-item-description {
-        max-width: 100%;
+        max-width: 48%
     }
     .main header .main__banner .main__banner-item {
         min-height: 465px;
@@ -180,10 +181,10 @@ body {
         align-items: center;
     }
     .footer .footer__menu {
-        grid-gap: 30px;
+        grid-gap: 20px;
         display: -ms-grid;
         display: grid;
-        margin: 30px 0;
+        margin: 10px 0;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
@@ -258,10 +259,26 @@ body {
     .catalogs__option {
         grid-template-columns: repeat(2, 1fr);
     }
+    .specialOffers .specialOffers__paggination a {
+        margin-top: 10px;
+    }
     .specialOffers .specialOffers__list .slick-dots,
     .news .news__list .slick-dots {
         position: absolute;
         bottom: -70px;
+    }
+    .news .news__list .slick-arrow,
+    .specialOffers .specialOffers__list .slick-arrow {
+        position: absolute;
+        bottom: -70px;
+    }
+    .news .news__list .slick-arrow-prev,
+    .specialOffers .specialOffers__list .slick-arrow-prev {
+        left: 30px;
+    }
+    .news .news__list .slick-arrow-next,
+    .specialOffers .specialOffers__list .slick-arrow-next {
+        right: 30px;
     }
     .specialOffers__paggination {
         margin: 0;
@@ -270,6 +287,7 @@ body {
     .news .news__more {
         justify-content: center;
         margin-bottom: 50px;
+        margin-top: 10px;
     }
 }
 

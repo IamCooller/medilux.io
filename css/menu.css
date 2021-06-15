@@ -15,6 +15,20 @@
     top: 0;
 }
 
+.menu .logo {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.menu .logo::after {
+    content: '';
+    width: 110%;
+    border-bottom: 1px solid #dbdbdb;
+    position: absolute;
+    bottom: 0;
+    RIGHT: -5px;
+}
+
 .logo img {
     width: 100%;
     display: block;
@@ -45,7 +59,7 @@
     width: 100%;
     background: #FFF;
     border-radius: 4px;
-    margin-top: 30px;
+    margin-top: 40px;
     height: 100%;
     max-height: 83%;
     overflow-y: scroll;
@@ -65,7 +79,17 @@
 
 .menu .accordion li {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.menu .accordion li::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 1px solid #dbdbdb;
 }
 
 .menu .accordion .arrow-menu {

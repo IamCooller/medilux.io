@@ -18,8 +18,8 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 15px;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 40px;
+    padding-right: 40px;
     position: fixed;
     top: 0;
     background: #fff;
@@ -198,13 +198,14 @@
 
 .main header .header-top .header-top__menu li a.active_link {
     border-bottom: 1px solid;
+    color: #393185;
 }
 
 .main header .main__banner {
     display: -ms-grid;
     display: grid;
     position: relative;
-    width: 100vw;
+    width: 100%;
 }
 
 .main header .main__banner .main__banner-item {
@@ -224,7 +225,7 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 65px 24px;
+    padding: 65px 40px;
     height: 100%;
 }
 
@@ -282,8 +283,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 0;
-    margin-left: 30%
+    margin: 0 auto;
 }
 
 .main header .main__banner .slick-dots li {
