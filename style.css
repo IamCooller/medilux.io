@@ -13,6 +13,11 @@
 @import url(css/catalogs.css);
 @import url(css/aboutMain.css);
 @import url(css/caralogMore.css);
+@import url(css/contacts.css);
+@import url(css/newsMain.css);
+@import url(css/specialOfferMore.css);
+@import url(css/newsOne.css);
+@import url(css/oneItem.css);
 @import url(css/mediaSize.css);
 body {
     background: #FAFAFA;

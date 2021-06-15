@@ -4,13 +4,20 @@
 }
 
 .aboutMain__content {
-    background: url(../img/aboutMain.png) no-repeat center;
-    background-size: cover;
     padding: 30px;
 }
 
 .aboutMain__title {
     margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 30px;
+}
+
+.aboutMain__title img {
+    width: 100%;
 }
 
 .aboutMain__title p {
@@ -54,7 +61,7 @@
 
 .aboutMain__reason li svg {
     margin-right: 15px;
-    max-width: 40px;
+    max-width: 30px;
     width: 100%;
     display: block;
 }
