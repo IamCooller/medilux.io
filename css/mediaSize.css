@@ -45,6 +45,9 @@ body {
     .nav-up {
         top: -90px !important;
     }
+    .oneItem__content .tabs {
+        max-width: 50%;
+    }
 }
 
 @media (max-width:1440px) {
@@ -95,6 +98,19 @@ body {
     .footer .footer__additional .footer__additional-top-tel,
     .footer .footer__additional .footer__additional-top-mail {
         margin-bottom: 10px;
+    }
+    .oneItem__table-right_futures-open {
+        width: 320px;
+    }
+    .oneItem__table-right_futures-open-last {
+        left: -250px;
+    }
+    .oneItem__table-right_futures {
+        max-width: 100%;
+    }
+    .oneItem__content .tabs,
+    .oneItem__table-right_futures {
+        max-width: 100%;
     }
 }
 
@@ -155,6 +171,12 @@ body {
     }
     .aboutMain__title {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .oneItem {
+        margin-top: 60px;
+    }
+    .oneItem__table-right_price {
+        flex-wrap: wrap;
     }
 }
 
@@ -275,6 +297,9 @@ body {
         position: absolute;
         bottom: -70px;
     }
+    .oneItem-specialOffers .specialOffers__list .slick-dots {
+        bottom: -15px;
+    }
     .news .news__list .slick-arrow-prev,
     .specialOffers .specialOffers__list .slick-arrow-prev {
         left: 30px;
@@ -305,6 +330,9 @@ body {
     .newsOne h2 {
         font-size: 22px;
         line-height: 26px;
+    }
+    .oneItem__table-right_price button {
+        margin-left: auto;
     }
 }
 
@@ -368,8 +396,40 @@ body {
     .about-right-content {
         padding: 30px 10px;
     }
-    .newsMain {
+    .newsMain,
+    .oneItem {
         margin-top: 30px;
+    }
+    .oneItem__table {
+        flex-wrap: wrap;
+    }
+    .oneItem__table-left {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .oneItem__content .tabs {
+        flex-direction: column;
+    }
+    .oneItem h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .oneItem__table-right {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .oneItem__table-right_futures li {
+        position: unset;
+    }
+    .oneItem__table-right_futures {
+        position: relative;
+    }
+    .oneItem__table-right_futures-open {
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
 }
 

@@ -1,6 +1,5 @@
 .oneItem {
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin: 30px auto;
 }
 
 .oneItem h2 {
@@ -14,10 +13,12 @@
 
 .oneItem__table {
     display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .oneItem__table-left {
-    max-width: 35%;
+    max-width: 30%;
 }
 
 .oneItem__table .slider-for {
@@ -34,25 +35,219 @@
     right: 0;
 }
 
+.oneItem__table-right {
+    margin-left: 30px;
+    max-width: 50%;
+}
+
 .oneItem__table-right_futures {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     margin: 0;
     padding: 0;
     align-content: center;
+    margin: 0 auto;
+    max-width: 45%;
+    margin-bottom: 35px;
 }
 
 .oneItem__table-right_futures li {
     text-decoration: none;
     list-style: none;
+    position: relative;
+    cursor: pointer;
 }
 
 .oneItem__table-right_futures-open {
     display: none;
     position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 3px;
+    z-index: 9;
+    padding: 15px;
+    width: 370px;
+    left: -147px;
+    top: 40px;
+    min-height: 128px;
+}
+
+.oneItem__table-right_futures-open span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+.oneItem__table-right_futures-open ul {
+    padding: 0;
+    margin: 0;
+}
+
+.oneItem__table-right_futures-open ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    list-style: disc;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.oneItem__table-right_futures-open ul li::marker {
+    color: #393185;
 }
 
 .oneItem__table-right_futures li:hover .oneItem__table-right_futures-open {
     display: block;
+}
+
+.oneItem__table-right_futures li:hover>svg path {
+    fill: #393185;
+}
+
+.oneItem__table-right_price {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.oneItem__table-right_price h3 {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.oneItem__table-right_price span {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 30px;
+    line-height: 38px;
+    display: block;
+    color: #393185;
+}
+
+.oneItem__table-right_price button {
+    margin-left: 20%;
+}
+
+.oneItem__table-right_content h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.oneItem__table-right_content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+}
+
+.oneItem__table-right_production {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.oneItem__table-right_production img {
+    max-width: 152px;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.oneItem__content .tab-panel {
+    display: none;
+}
+
+.oneItem__content .tab-panel.active {
+    display: block;
+}
+
+.oneItem__content .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    max-width: 63%;
+}
+
+.oneItem__content .tabs li {
+    list-style: none;
+}
+
+.oneItem__content .tabs li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #4F4F4F;
+}
+
+.oneItem__content .tabs li a.active {
+    color: #393185;
+}
+
+.oneItem__content .tab-pane {
+    padding: 30px;
+}
+
+.oneItem__content .tab-pane p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+    margin-bottom: 15px;
+}
+
+.oneItem__content .tab-pane h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.oneItem__content .tab-pane h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.oneItem__content .tab-pane ul {
+    padding: 0;
+    margin: 0;
+}
+
+.oneItem__content .tab-pane ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    color: #4F4F4F;
+}
+
+.oneItem__content .tab-pane ul li::marker {
+    color: #393185;
 }

@@ -1,3 +1,10 @@
+$(window).on('load', function() {
+    $preloader = $('.loaderArea'),
+        $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+
 $(document).ready(function() {
     $(function() {
         var Accordion = function(el, multiple) {
@@ -83,7 +90,7 @@ $(document).ready(function() {
         asNavFor: '.slider-for',
         dots: false,
         arrows: false,
-        centerMode: true,
+
         focusOnSelect: true
     });
     $('.mobile__button').click(function() {
@@ -203,4 +210,13 @@ $(document).ready(function() {
             };
         document.addEventListener("scroll", n), window.addEventListener("resize", n), window.addEventListener("orientationchange", n), n()
     }), $(".navbar-toggler").click(function(e) { "true" == $(this).attr("aria-expanded") && ($(".navbar").find(".any-arrow-dropdown-menu-mobile").hide(), $(".navbar-bg").hide()), "false" == $(this).attr("aria-expanded") && ($(".navbar").find(".any-arrow-dropdown-menu-mobile").show(), $(".navbar-bg").show()), e.preventDefault() }), $(".navbar-bg").click(function(e) { $(e.target).is(".navbar-collapse") || $(".navbar-collapse").collapse("hide"), $(".navbar").find(".any-arrow-dropdown-menu-mobile").hide(), $(this).hide() }), $(document).ready(function() { $(".card-header-accordion").click(function(e) { $(this).removeClass("initial-load") }) }), $(function() { window.setTimeout(function() { $(".any-bubbleBadge").show(), $(".any-bubbleBadge-template").show(), $(".any-bubbleBadge-newLicenses").show(), $(".any-bubbleBadge-landingPageHeader").show() }, 1e3) }), $(document).ready(function() { $("[data-href]").click(function() { return window.location.href = $(this).data("href"), !1 }), $("[data-href-tab]").click(function() { return window.open($(this).data("href-tab"), "_blank"), !1 }), $("[data-href], [data-href-tab]").addClass("cursor-pointer") }), $("#alertClose").click(function() { $("#alertMessage").slideUp(300, function() { $(this).alert("close") }) }), $(document).ready(function() { $("[data-cookie-value]").each(function() { $(this).val(getCookie($(this).data("cookie-value"))), $(this).removeAttr("data-cookie-value") }) });
+
+    $('.tabs').on('click', 'a', function(e) {
+        e.preventDefault();
+        var tabId = $(this).attr('data-tab');
+        $(this).closest('.tabs').find('a').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-panel').hide('slow');
+        $('#' + tabId).show('slow');
+    });
 });
