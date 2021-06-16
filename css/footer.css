@@ -103,6 +103,10 @@
     margin-right: 10px;
 }
 
+.footer .footer__additional svg path {
+    fill: #edecf2;
+}
+
 .footer .footer__additional .footer__additional-top-mail a {
     font-family: "Microsoft JhengHei";
     font-style: normal;
