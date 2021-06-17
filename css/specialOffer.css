@@ -46,7 +46,12 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     position: relative;
+    transition: .3s;
     align-items: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
 }
 
 .specialOffers .specialOffers__list .specialOffers__list-item.discount::after {
@@ -71,7 +76,7 @@
     margin: 0 auto;
 }
 
-.specialOffers .specialOffers__list .specialOffers__list-item a {
+.specialOffers .specialOffers__list .specialOffers__list-item a.itemPoP {
     font-family: "Futura PT";
     font-style: normal;
     font-weight: normal;
@@ -104,7 +109,19 @@
     -o-transition: .3s;
 }
 
-.specialOffers .specialOffers__list .specialOffers__list-item a:hover {
+.specialOffers .specialOffers__list .specialOffers__list-item a {
+    text-decoration: none;
+}
+
+.specialOffers .specialOffers__list .specialOffers__list-item:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.specialOffers .specialOffers__list .specialOffers__list-item a.itemPoP:hover {
     color: #393185;
     background: none;
     border: 2px solid #393185;
