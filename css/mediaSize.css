@@ -54,6 +54,9 @@ body {
     .nav-up {
         top: -100px !important;
     }
+    .footer .footer__menu {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -111,6 +114,12 @@ body {
     .oneItem__content .tabs,
     .oneItem__table-right_futures {
         max-width: 100%;
+    }
+    .footer__additional {
+        margin-right: 15px;
+    }
+    .footer .footer__menu {
+        padding: 0 10px;
     }
 }
 
@@ -430,6 +439,12 @@ body {
         right: 50%;
         left: 50%;
         transform: translate(-50%, 0%);
+    }
+    .footer .footer__menu {
+        grid-gap: 10;
+    }
+    .footer .footer__menu ul li {
+        line-height: 20px;
     }
 }
 
