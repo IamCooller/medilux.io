@@ -87,6 +87,10 @@
 }
 
 .Offers__list-item a {
+    text-decoration: none;
+}
+
+.Offers__list-item a.itemPoP {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -118,7 +122,7 @@
     -o-transition: .3s;
 }
 
-.Offers__list-item a:hover {
+.Offers__list-item a.itemPoP:hover {
     color: #393185;
     background: none;
     border: 2px solid #393185;
