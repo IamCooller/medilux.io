@@ -85,7 +85,6 @@
 }
 
 .footer .footer__additional .footer__additional-top-tel a {
-    font-family: "Microsoft JhengHei";
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -115,12 +114,11 @@
 }
 
 .footer .footer__additional .footer__additional-top-mail a {
-    font-family: "Microsoft JhengHei";
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 21px;
     color: #FFFFFF;
 }
 
@@ -132,15 +130,6 @@
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.footer .footer__additional .footer__additional-top-mail a {
-    font-family: "Microsoft JhengHei";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    color: #FFFFFF;
 }
 
 .footer__additional-social {
