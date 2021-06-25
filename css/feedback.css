@@ -13,43 +13,37 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 30px;
-    height: 153px;
+    padding: 42px 30px;
 }
 
 .feedback .feedback-description {
-    max-width: 266px;
+    max-width: 500px;
 }
 
 .feedback .feedback-description h4 {
-    font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
-    font-size: 18px;
-    line-height: 23px;
-    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
     color: #FFFFFF;
+    margin-bottom: 15px;
 }
 
 .feedback .feedback-description p {
-    font-family: Futura PT;
     font-style: normal;
-    font-weight: 450;
-    font-size: 18px;
-    line-height: 23px;
-    text-transform: uppercase;
-    margin-top: 10px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
     color: #FFFFFF;
+    margin: 0;
 }
 
 .feedback .feedback-input {
-    max-width: 45%;
+    max-width: 564px;
     width: 100%;
     display: -ms-grid;
     display: grid;
@@ -67,7 +61,6 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 3px;
-    font-family: Futura PT;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -99,12 +92,17 @@
     color: #898989;
 }
 
+.feedback-button {
+    width: 100%;
+    max-width: 240px;
+    margin-left: 30px;
+}
+
 .feedback .feedback-button button {
     background: none;
     outline: none;
     border: none;
     text-align: center;
-    font-family: Futura PT;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -112,7 +110,7 @@
     background: #FFFFFF;
     border-radius: 3px;
     color: #393185;
-    height: 37px;
+    height: 39px;
     text-transform: uppercase;
     padding: 0 15px;
     border: 2px solid;
@@ -121,6 +119,8 @@
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    width: 100%;
+    display: block;
 }
 
 .feedback .feedback-button button:hover {

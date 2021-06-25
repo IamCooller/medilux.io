@@ -28,7 +28,6 @@
 }
 
 .mainBanner .main__banner .main__banner-item h2 {
-    font-family: "Futura PT";
     font-style: normal;
     font-weight: 450;
     font-size: 55px;
@@ -55,7 +54,6 @@
 }
 
 .mainBanner .main__banner .main__banner-item .main__banner-item-description h3 {
-    font-family: "Futura PT";
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -66,7 +64,6 @@
 }
 
 .mainBanner .main__banner .main__banner-item .main__banner-item-description h4 {
-    font-family: "Futura PT";
     font-style: normal;
     font-weight: normal;
     font-size: 30px;

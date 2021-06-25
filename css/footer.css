@@ -37,9 +37,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 .footer .footer__menu ul li {
@@ -47,7 +45,6 @@
 }
 
 .footer .footer__menu ul li a {
-    font-family: "Futura PT";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

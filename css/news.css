@@ -1,6 +1,6 @@
 .news {
     background: #FFFFFF;
-    padding: 30px 0 30px 0;
+    margin-bottom: 30px;
 }
 
 .news .title {
@@ -30,24 +30,41 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 32%;
+    width: 100%;
     background: #FFFFFF;
     border: 1px solid #EDECF2;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 3px;
+    margin: 0 13px;
     padding-top: 12px;
 }
 
+.news .news__list .slick-arrow {
+    height: 18px;
+    width: 9, 72px;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.news .news__list .slick-arrow.slick-arrow-prev {
+    left: -31px;
+}
+
+.news .news__list .slick-arrow.slick-arrow-next {
+    right: -31px;
+}
+
 .news .news__list .news__item .news__item-title {
-    font-family: "Futura PT";
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
-    line-height: 21px;
+    font-size: 24px;
+    line-height: 29px;
     text-align: center;
     color: #000000;
-    max-width: 154px;
+    max-width: 204px;
     margin: 0 auto;
     margin-bottom: 15px;
 }
@@ -57,7 +74,6 @@
 }
 
 .news .news__list .news__item p {
-    font-family: "Futura PT";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -81,21 +97,19 @@
 }
 
 .news .news__list .news__item .news__item-bottom .news__item-data {
-    font-family: "Futura PT";
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 18px;
     text-align: center;
     color: #898989;
 }
 
 .news .news__list .news__item .news__item-bottom a {
-    font-family: "Futura PT";
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
     color: #393185;
     text-decoration: none;
 }
@@ -111,17 +125,14 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: "Futura PT";
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 24px;
+    line-height: 29px;
     text-align: right;
     color: #393185;
     margin-top: 30px;
     text-decoration: none;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: center;
 }
 
