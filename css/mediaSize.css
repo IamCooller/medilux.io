@@ -14,7 +14,6 @@
 }
 
 .container.option {
-    padding-left: 420px;
     padding-right: 70px;
 }
 
@@ -133,7 +132,7 @@ body {
         width: calc(100% - 270px);
     }
     .container {
-        padding-left: 270px;
+        padding-left: 310px;
     }
     .container.option {
         padding-left: 310px;
