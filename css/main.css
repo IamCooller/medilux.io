@@ -31,7 +31,7 @@
 }
 
 .main header .header-top form {
-    max-width: 470px;
+    max-width: 33%;
     width: 100%;
     position: relative;
 }
@@ -113,8 +113,10 @@
 }
 
 .header-top__additional {
-    max-width: 572px;
+    max-width: 33%;
     width: 100%;
+    display: flex;
+    gap: 5px;
 }
 
 .main header .header-top .header-top__additional a {
@@ -124,6 +126,11 @@
     line-height: 15px;
     color: #000000;
     text-decoration: none;
+}
+
+.main header .header-top .header-top__additional .tel,
+.main header .header-top .header-top__additional .mail {
+    white-space: nowrap;
 }
 
 .main header .header-top .header-top__additional .tel a {
@@ -143,7 +150,7 @@
     line-height: 21px;
     background: #393185;
     border-radius: 3px;
-    max-width: 267px;
+    max-width: 18%;
     width: 100%;
     height: 39px;
     text-align: center;
@@ -151,6 +158,7 @@
     outline: none;
     -webkit-transition: .3s;
     -o-transition: .3s;
+    white-space: nowrap;
     transition: .3s;
 }
 
@@ -225,7 +233,7 @@
 .main header .main__banner .slick-arrow {
     position: absolute;
     top: 50%;
-    z-index: 9;
+    z-index: 8;
     cursor: pointer;
     right: 15px;
 }

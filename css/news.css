@@ -94,6 +94,7 @@
     align-items: center;
     padding: 15px;
     padding-top: 0;
+    gap: 10px;
 }
 
 .news .news__list .news__item .news__item-bottom .news__item-data {
@@ -112,6 +113,7 @@
     line-height: 22px;
     color: #393185;
     text-decoration: none;
+    white-space: nowrap
 }
 
 .news .news__list .news__item .news__item-bottom svg {

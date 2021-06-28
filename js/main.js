@@ -51,6 +51,14 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         prevArrow: '<svg class="slick-arrow slick-arrow-prev" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle r="21" transform="matrix(-1 0 0 1 21 21)" fill="#FAFAFA"/> <g clip-path="url(#clip0)"> <path d="M16.3442 20.5061L24.6697 12.2036C24.9425 11.9317 25.3841 11.9321 25.6565 12.205C25.9286 12.4777 25.9279 12.9196 25.655 13.1917L17.8251 21L25.6553 28.8083C25.9281 29.0805 25.9288 29.522 25.6567 29.7949C25.5202 29.9316 25.3414 30 25.1625 30C24.9842 30 24.806 29.9321 24.6698 29.7963L16.3442 21.494C16.2128 21.3633 16.1391 21.1854 16.1391 21C16.1391 20.8147 16.213 20.637 16.3442 20.5061Z" fill="#393185"/>  </g>   <defs>  <clipPath id="clip0"> <rect width="18" height="18" fill="white" transform="matrix(-1 0 0 1 30 12)"/>  </clipPath> </defs></svg>',
         nextArrow: '<svg class="slick-arrow slick-arrow-next" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="21" cy="21" r="21" fill="#FAFAFA"/><g clip-path="url(#clip0)"><path d="M25.6558 20.5061L17.3303 12.2036C17.0575 11.9317 16.6159 11.9321 16.3435 12.205C16.0714 12.4777 16.0721 12.9196 16.345 13.1917L24.1749 21L16.3447 28.8083C16.0719 29.0805 16.0712 29.522 16.3433 29.7949C16.4798 29.9316 16.6586 30 16.8375 30C17.0158 30 17.194 29.9321 17.3302 29.7963L25.6558 21.494C25.7872 21.3633 25.8609 21.1854 25.8609 21C25.8609 20.8147 25.787 20.637 25.6558 20.5061Z" fill="#393185"/> </g><defs><clipPath id="clip0"><rect width="18" height="18" fill="white" transform="translate(12 12)"/></clipPath></defs></svg>',
+        responsive: [{
+                breakpoint: 470,
+                settings: {
+                    arrows: false
+                }
+            }
+
+        ]
     });
 
     $(".brands-slick").slick({
@@ -115,13 +123,36 @@ $(document).ready(function() {
         slidesToShow: 4,
         prevArrow: '<svg width="10" height="18" class="slick-arrow slick-arrow-prev" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.344199 8.50605L8.66973 0.20355C8.9425 -0.0683121 9.38413 -0.0678551 9.65645 0.204956C9.92856 0.477733 9.92786 0.91961 9.65505 1.19168L1.82508 9.00003L9.65533 16.8083C9.92811 17.0805 9.92881 17.522 9.65674 17.7949C9.52022 17.9316 9.34138 18 9.16255 18C8.98416 18 8.80603 17.9321 8.66976 17.7963L0.344199 9.49397C0.21282 9.36326 0.139097 9.18537 0.139097 9.00003C0.139097 8.81469 0.213032 8.63701 0.344199 8.50605Z" fill="#393185"/></svg>',
         nextArrow: '<svg width="10" height="18" class="slick-arrow slick-arrow-next" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.6558 8.50605L1.33027 0.20355C1.0575 -0.0683121 0.615865 -0.0678551 0.343546 0.204956C0.0714377 0.477733 0.0721408 0.91961 0.344952 1.19168L8.17492 9.00003L0.344671 16.8083C0.0718946 17.0805 0.0711915 17.522 0.343265 17.7949C0.479776 17.9316 0.658615 18 0.837454 18C1.01584 18 1.19397 17.9321 1.33024 17.7963L9.6558 9.49397C9.78718 9.36326 9.8609 9.18537 9.8609 9.00003C9.8609 8.81469 9.78697 8.63701 9.6558 8.50605Z" fill="#393185"/></svg>',
+        responsive: [{
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 770,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
     $(window).resize(function() {
         if (window.innerWidth <= 770) {
             $(".specialOffers__list").slick({
-                dots: true,
+                dots: false,
                 infinite: true,
-                arrows: true,
+                arrows: false,
                 cssEase: 'linear',
                 autoplaySpeed: 2000,
                 speed: 300,

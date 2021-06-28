@@ -19,7 +19,7 @@
 }
 
 body {
-    padding-top: 100px;
+    padding-top: 134px;
 }
 
 @media(min-width:1440px) {
@@ -50,7 +50,74 @@ body {
         top: -100px !important;
     }
     .footer .footer__menu {
-        padding: 0 20px;
+        padding: 0 10px;
+    }
+    .header-top__additional {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btn {
+        max-width: fit-content;
+    }
+    .about-right-content__img {
+        margin: 0;
+        margin-top: 50px;
+    }
+    .about-right-content {
+        flex-direction: column;
+    }
+    .main header .main__banner .main__banner-item h2 {
+        font-size: 35px;
+        line-height: 43px;
+    }
+    .main header .main__banner .main__banner-item .main__banner-item-description h4 {
+        font-size: 22px;
+    }
+    .main header .main__banner .main__banner-item .main__banner-item-description h3 {
+        font-size: 24px;
+    }
+    .about-right-content {
+        padding: 0;
+    }
+    .brands {
+        margin: 30px 0;
+    }
+    .about,
+    .feedback {
+        margin-bottom: 30px;
+    }
+    .specialOffers {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    .brands .title {
+        margin-bottom: 15px;
+    }
+    .container.option,
+    .container {
+        padding-right: 40px;
+        padding-left: 350px;
+    }
+    .feedback .feedback-description h4 {
+        font-size: 21px;
+    }
+    .feedback .feedback-description p {
+        font-size: 19px;
+    }
+    .feedback-button {
+        max-width: 18%;
+    }
+    .news .news__list .news__item .news__item-title {
+        font-size: 21px;
+        line-height: 21px;
+    }
+    .footer .footer__menu ul li a {
+        font-size: 12px;
+    }
+    .about .about-right .about-right-content .about-right-content-center,
+    .title {
+        padding-left: 0;
     }
 }
 
@@ -116,6 +183,12 @@ body {
     .footer .footer__menu {
         padding: 0 10px;
     }
+    .feedback-button {
+        max-width: 23%;
+    }
+    .footer__additional-social {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media(max-width:990px) {
@@ -169,10 +242,6 @@ body {
         height: 70vh;
         max-height: 100%;
     }
-    .about .about-right .about-right-content .about-right-content-center {
-        max-width: 80vw;
-        position: relative;
-    }
     .aboutMain__title {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -182,11 +251,18 @@ body {
     .oneItem__table-right_price {
         flex-wrap: wrap;
     }
+    .footer__additional-social {
+        display: flex;
+    }
+    .main header .header-top {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media(max-width:770px) {
     .main header .header-top form {
-        max-width: 69%;
+        max-width: 50%;
     }
     .main header .header-top .header-top__menu li a {
         font-size: 12px;
@@ -338,6 +414,20 @@ body {
     .oneItem__table-right_price button {
         margin-left: auto;
     }
+    .btn {
+        margin-left: auto;
+        margin-top: 10px;
+    }
+    .main header .header-top .header-top__menu {
+        margin-top: 10px;
+    }
+    .header-top__additional {
+        justify-content: flex-end;
+    }
+    .feedback-button {
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width:570px) {
@@ -398,7 +488,7 @@ body {
         text-align: center;
     }
     .about-right-content {
-        padding: 30px 10px;
+        padding: 0;
     }
     .newsMain,
     .oneItem {
@@ -440,6 +530,42 @@ body {
     }
     .footer .footer__menu ul li {
         line-height: 20px;
+    }
+    .about .about-right .about-right-content p {
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .about .about-right .about-right-content a {
+        font-size: 16px;
+    }
+    .news .news__more {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:440px) {
+    .main header .header-top form {
+        max-width: 69%;
+    }
+    .main header .header-top .header-top__menu li a {
+        font-size: 10px;
+    }
+    .header-top__additional {
+        max-width: 45%;
+        justify-content: flex-start;
+    }
+    .main header .main__banner .main__banner-item {
+        padding: 65px 0;
+    }
+    .about-right-content {
+        max-width: 290px;
+        margin: 0 auto;
+    }
+    .footer .footer__menu {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main header .main__banner .slick-dots {
+        right: 40%;
     }
 }
 
