@@ -211,6 +211,7 @@
     .main header .header-top .header-top__menu li a.active_link {
         border-bottom: 1px solid;
         color: #393185;
+        cursor: pointer;
     }
     
     .main header .header-top .header-top__menu li a:hover {
@@ -257,7 +258,7 @@
         left: 15px;
     }
     
-    .main header .main__banner .main__banner-item h2 {
+    .main header .main__banner .main__banner-item .h2 {
         font-style: normal;
         font-weight: 600;
         font-size: 50px;
@@ -282,7 +283,7 @@
         height: 100%;
     }
     
-    .main header .main__banner .main__banner-item .main__banner-item-description h3 {
+    .main header .main__banner .main__banner-item .main__banner-item-description .h3 {
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
@@ -291,7 +292,7 @@
         color: #000000;
     }
     
-    .main header .main__banner .main__banner-item .main__banner-item-description h4 {
+    .main header .main__banner .main__banner-item .main__banner-item-description .h4 {
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
