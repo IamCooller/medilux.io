@@ -28,7 +28,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 1.2;
     color: #FFFFFF;
     margin-bottom: 15px;
 }
@@ -37,7 +37,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 1.2;
     color: #FFFFFF;
     margin: 0;
 }
@@ -64,7 +64,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     padding: 10PX;
 }
 
@@ -106,7 +106,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.25;
     background: #FFFFFF;
     border-radius: 3px;
     color: #393185;

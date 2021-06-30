@@ -31,7 +31,7 @@
     font-style: normal;
     font-weight: 450;
     font-size: 55px;
-    line-height: 65px;
+    line-height: 1.18;
     max-width: 450px;
     text-transform: uppercase;
     color: #393185;
@@ -57,7 +57,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 38px;
+    line-height: 1.26;
     text-transform: uppercase;
     margin-bottom: 15px;
     color: #000000;
@@ -67,7 +67,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23;
     color: #000000;
 }
 

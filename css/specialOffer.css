@@ -68,7 +68,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 1.3;
     text-align: center;
     color: #000000;
     max-width: 142px;
@@ -79,7 +79,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 15px;
+    line-height: 1.07;
     background: #393185;
     border-radius: 3px;
     color: #FFFFFF;
@@ -129,7 +129,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 15px;
+    line-height: 1.07;
     color: #393185;
     text-decoration: none;
     text-align: center;

@@ -23,7 +23,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     color: #000;
 }
 
@@ -117,7 +117,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
-    line-height: 21px;
+    line-height: 1.23;
     text-align: center;
     color: #000000;
     max-width: 154px;
@@ -133,7 +133,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     color: #000000;
     padding: 15px;
 }
@@ -156,7 +156,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.25;
     text-align: center;
     color: #898989;
 }
@@ -165,7 +165,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 15px;
+    line-height: 1.07;
     color: #393185;
     text-decoration: none;
 }
@@ -184,7 +184,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 15px;
+    line-height: 1.07;
     text-align: right;
     color: #393185;
     margin-top: 30px;

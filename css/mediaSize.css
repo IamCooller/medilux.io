@@ -2,7 +2,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23;
     color: #393185;
     padding-left: 70px;
 }
@@ -68,7 +68,7 @@ body {
     }
     .main header .main__banner .main__banner-item h2 {
         font-size: 35px;
-        line-height: 43px;
+        line-height: 1.22;
     }
     .main header .main__banner .main__banner-item .main__banner-item-description h4 {
         font-size: 22px;
@@ -109,7 +109,7 @@ body {
     }
     .news .news__list .news__item .news__item-title {
         font-size: 21px;
-        line-height: 21px;
+        line-height: 1;
     }
     .footer .footer__menu ul li a {
         font-size: 12px;
@@ -157,7 +157,7 @@ body {
     }
     .footer .footer__additional .footer__additional-top-tel a {
         font-size: 12px;
-        line-height: 12px;
+        line-height: 1;
     }
     .footer .footer__additional .footer__additional-top-tel,
     .footer .footer__additional .footer__additional-top-mail {
@@ -408,7 +408,7 @@ body {
     }
     .newsOne h2 {
         font-size: 22px;
-        line-height: 26px;
+        line-height: 1.18;
     }
     .oneItem__table-right_price button {
         margin-left: auto;
@@ -448,15 +448,15 @@ body {
     }
     .main header .main__banner .main__banner-item h2 {
         font-size: 25px;
-        line-height: 30px;
+        line-height: 1.2;
     }
     .main header .main__banner .main__banner-item .main__banner-item-description h3 {
         font-size: 20px;
-        line-height: 25px;
+        line-height: 1.25;
     }
     .main header .main__banner .main__banner-item .main__banner-item-description h4 {
         font-size: 22px;
-        line-height: 26px;
+        line-height: 1.18;
     }
     .feedback .feedback-input {
         max-width: 100%;
@@ -470,7 +470,7 @@ body {
     }
     .aboutMain__title p {
         font-size: 16px;
-        line-height: 23px;
+        line-height: 1.43;
     }
     .caralogMore {
         margin: auto;
@@ -505,7 +505,7 @@ body {
     }
     .oneItem h2 {
         font-size: 25px;
-        line-height: 30px;
+        line-height: 1.2;
         margin-bottom: 15px;
     }
     .oneItem__table-right {
@@ -532,7 +532,7 @@ body {
     }
     .about .about-right .about-right-content p {
         font-size: 12px;
-        line-height: 23px;
+        line-height: 1.91;
     }
     .about .about-right .about-right-content a {
         font-size: 16px;
