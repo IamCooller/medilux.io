@@ -49,8 +49,8 @@ $(document).ready(function() {
         autoplay: true,
         cssEase: 'linear',
         autoplaySpeed: 2000,
-        prevArrow: '<svg class="slick-arrow slick-arrow-prev" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle r="21" transform="matrix(-1 0 0 1 21 21)" fill="#FAFAFA"/> <g clip-path="url(#clip0)"> <path d="M16.3442 20.5061L24.6697 12.2036C24.9425 11.9317 25.3841 11.9321 25.6565 12.205C25.9286 12.4777 25.9279 12.9196 25.655 13.1917L17.8251 21L25.6553 28.8083C25.9281 29.0805 25.9288 29.522 25.6567 29.7949C25.5202 29.9316 25.3414 30 25.1625 30C24.9842 30 24.806 29.9321 24.6698 29.7963L16.3442 21.494C16.2128 21.3633 16.1391 21.1854 16.1391 21C16.1391 20.8147 16.213 20.637 16.3442 20.5061Z" fill="#393185"/>  </g>   <defs>  <clipPath id="clip0"> <rect width="18" height="18" fill="white" transform="matrix(-1 0 0 1 30 12)"/>  </clipPath> </defs></svg>',
-        nextArrow: '<svg class="slick-arrow slick-arrow-next" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="21" cy="21" r="21" fill="#FAFAFA"/><g clip-path="url(#clip0)"><path d="M25.6558 20.5061L17.3303 12.2036C17.0575 11.9317 16.6159 11.9321 16.3435 12.205C16.0714 12.4777 16.0721 12.9196 16.345 13.1917L24.1749 21L16.3447 28.8083C16.0719 29.0805 16.0712 29.522 16.3433 29.7949C16.4798 29.9316 16.6586 30 16.8375 30C17.0158 30 17.194 29.9321 17.3302 29.7963L25.6558 21.494C25.7872 21.3633 25.8609 21.1854 25.8609 21C25.8609 20.8147 25.787 20.637 25.6558 20.5061Z" fill="#393185"/> </g><defs><clipPath id="clip0"><rect width="18" height="18" fill="white" transform="translate(12 12)"/></clipPath></defs></svg>',
+        prevArrow: '<svg class="slick-arrow slick-arrow-prev" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle r="21" transform="matrix(-1 0 0 1 21 21)" fill="#FAFAFA"/> <g clip-path="url(#clip3)"> <path d="M16.3442 20.5061L24.6697 12.2036C24.9425 11.9317 25.3841 11.9321 25.6565 12.205C25.9286 12.4777 25.9279 12.9196 25.655 13.1917L17.8251 21L25.6553 28.8083C25.9281 29.0805 25.9288 29.522 25.6567 29.7949C25.5202 29.9316 25.3414 30 25.1625 30C24.9842 30 24.806 29.9321 24.6698 29.7963L16.3442 21.494C16.2128 21.3633 16.1391 21.1854 16.1391 21C16.1391 20.8147 16.213 20.637 16.3442 20.5061Z" fill="#393185"/>  </g>   <defs>  <clipPath id="clip3"> <rect width="18" height="18" fill="white" transform="matrix(-1 0 0 1 30 12)"/>  </clipPath> </defs></svg>',
+        nextArrow: '<svg class="slick-arrow slick-arrow-next" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="21" cy="21" r="21" fill="#FAFAFA"/><g clip-path="url(#clip3)"><path d="M25.6558 20.5061L17.3303 12.2036C17.0575 11.9317 16.6159 11.9321 16.3435 12.205C16.0714 12.4777 16.0721 12.9196 16.345 13.1917L24.1749 21L16.3447 28.8083C16.0719 29.0805 16.0712 29.522 16.3433 29.7949C16.4798 29.9316 16.6586 30 16.8375 30C17.0158 30 17.194 29.9321 17.3302 29.7963L25.6558 21.494C25.7872 21.3633 25.8609 21.1854 25.8609 21C25.8609 20.8147 25.787 20.637 25.6558 20.5061Z" fill="#393185"/> </g><defs><clipPath id="clip3"><rect width="18" height="18" fill="white" transform="translate(12 12)"/></clipPath></defs></svg>',
         responsive: [{
                 breakpoint: 470,
                 settings: {
@@ -250,4 +250,79 @@ $(document).ready(function() {
         $('.tab-panel').hide('slow');
         $('#' + tabId).show('slow');
     });
+
+
+
+
+
+
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 10
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            // Создаем геообъект с типом геометрии "Точка".
+            myGeoObject = new ymaps.GeoObject({
+                // Описание геометрии.
+                geometry: {
+                    type: "Point",
+                    coordinates: [55.8, 37.8]
+                },
+                // Свойства.
+                properties: {
+                    // Контент метки.
+                    iconContent: 'Я тащусь',
+                    hintContent: 'Ну давай уже тащи'
+                }
+            }, {
+                // Опции.
+                // Иконка метки будет растягиваться под размер ее содержимого.
+                preset: 'islands#blackStretchyIcon',
+                // Метку можно перемещать.
+                draggable: true
+            }),
+            myPieChart = new ymaps.Placemark([
+                55.847, 37.6
+            ], {
+                // Данные для построения диаграммы.
+                data: [
+                    { weight: 8, color: '#0E4779' },
+                    { weight: 6, color: '#1E98FF' },
+                    { weight: 4, color: '#82CDFF' }
+                ],
+                iconCaption: "Диаграмма"
+            }, {
+                // Зададим произвольный макет метки.
+                iconLayout: 'default#pieChart',
+                // Радиус диаграммы в пикселях.
+                iconPieChartRadius: 30,
+                // Радиус центральной части макета.
+                iconPieChartCoreRadius: 10,
+                // Стиль заливки центральной части.
+                iconPieChartCoreFillStyle: '#ffffff',
+                // Cтиль линий-разделителей секторов и внешней обводки диаграммы.
+                iconPieChartStrokeStyle: '#ffffff',
+                // Ширина линий-разделителей секторов и внешней обводки диаграммы.
+                iconPieChartStrokeWidth: 3,
+                // Максимальная ширина подписи метки.
+                iconPieChartCaptionMaxWidth: 200
+            });
+
+        myMap.geoObjects
+            .add(myGeoObject)
+            .add(myPieChart)
+            .add(new ymaps.Placemark([55.684758, 37.738521], {
+                balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
+            }, {
+                preset: 'islands#icon',
+                iconColor: '#0095b6'
+            }))
+
+    }
+
 });
