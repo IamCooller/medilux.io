@@ -17,6 +17,24 @@
     padding-right: 44px;
 }
 
+.breadcrumbs {
+    background: #E7EAEC;
+    padding: 20px 28px;
+}
+
+.breadcrumbs span,
+.breadcrumbs span a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #707070;
+    text-decoration: none;
+}
+
+.breadcrumbs svg {
+    margin: 0 10px;
+}
+
 body {
     padding-top: 204px;
 }
