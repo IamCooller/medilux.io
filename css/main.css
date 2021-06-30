@@ -31,7 +31,7 @@
     }
     
     .main header .header-top form {
-        max-width: 644px;
+        max-width: 42%;
         width: 100%;
         position: relative;
     }
@@ -247,6 +247,7 @@
         align-items: flex-start;
         height: 100%;
         padding: 0 82px;
+        min-height: 479px;
     }
     
     .main header .main__banner .slick-arrow {
