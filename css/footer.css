@@ -115,7 +115,8 @@
     margin-right: 10px;
 }
 
-.footer .footer__additional svg path {
+.footer__additional-top-tel svg path,
+.footer__additional-top-mail svg path {
     fill: #edecf2;
 }
 
@@ -143,13 +144,11 @@
 }
 
 .footer__additional-social {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    display: flex;
+    gap: 20px;
     height: fit-content;
 }
 
 .footer .footer__additional .footer__additional-social a {
-    margin-right: 20px;
     text-decoration: none;
 }

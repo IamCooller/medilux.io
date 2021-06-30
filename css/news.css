@@ -1,10 +1,10 @@
 .news {
     background: #FFFFFF;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .news .title {
-    margin-bottom: 30px;
+    margin-bottom: 49px;
 }
 
 .news .news__list {
@@ -36,13 +36,11 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 3px;
-    margin: 0 13px;
-    padding-top: 12px;
+    margin: 0 18.5px;
+    padding-top: 24px;
 }
 
 .news .news__list .slick-arrow {
-    height: 18px;
-    width: 9, 72px;
     z-index: 9;
     position: absolute;
     top: 50%;
@@ -60,26 +58,32 @@
 .news .news__list .news__item .news__item-title {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 1.20;
+    font-size: 17px;
+    line-height: 1.23;
     text-align: center;
     color: #000000;
-    max-width: 204px;
+    max-width: 265px;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .news .news__list .news__item img {
     width: 100%;
 }
 
+.news__item-bottom-top {
+    max-width: 246px;
+    margin: 0 auto;
+    margin-top: 26px;
+    margin-bottom: 19px;
+}
+
 .news .news__list .news__item p {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.28;
+    font-size: 12px;
+    line-height: 1.5;
     color: #000000;
-    padding: 15px;
 }
 
 .news .news__list .news__item .news__item-bottom {
@@ -92,16 +96,14 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 15px;
-    padding-top: 0;
     gap: 10px;
 }
 
 .news .news__list .news__item .news__item-bottom .news__item-data {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.28;
+    font-size: 10px;
+    line-height: 1.3;
     text-align: center;
     color: #898989;
 }
@@ -109,8 +111,8 @@
 .news .news__list .news__item .news__item-bottom a {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
+    font-size: 10px;
+    line-height: 1.2;
     color: #393185;
     text-decoration: none;
     white-space: nowrap
@@ -121,7 +123,7 @@
 }
 
 .news .news__list .news__item .news__item-bottom svg {
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 .news .news__more {
@@ -133,11 +135,11 @@
     align-items: center;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 1.20;
+    font-size: 22px;
+    line-height: 1.22;
     text-align: right;
-    color: #393185;
-    margin-top: 30px;
+    color: #000000;
+    margin-top: 47px;
     text-decoration: none;
     justify-content: center;
 }
@@ -147,7 +149,7 @@
 }
 
 .news .news__more svg {
-    margin-left: 8px;
+    margin-left: 22px;
 }
 
 .news .news__list .slick-dots {

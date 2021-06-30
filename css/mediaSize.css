@@ -1,24 +1,24 @@
 .title {
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 1.23;
+    font-size: 35px;
+    line-height: 1.22;
     color: #393185;
-    padding-left: 70px;
+    padding-left: 82px;
 }
 
 .container {
-    padding-left: 380px;
+    padding-left: 348px;
     max-width: 100% !important;
-    padding-right: 70px;
+    padding-right: 44px;
 }
 
 .container.option {
-    padding-right: 70px;
+    padding-right: 44px;
 }
 
 body {
-    padding-top: 134px;
+    padding-top: 204px;
 }
 
 @media(min-width:1440px) {
@@ -26,11 +26,11 @@ body {
         max-width: 48%
     }
     .main header .main__banner .main__banner-item {
-        min-height: 534px;
+        min-height: 479px;
     }
     .header-top__additional {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     .feedback .feedback-input {
         -ms-grid-columns: (1fr)[2];
