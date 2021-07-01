@@ -721,8 +721,7 @@
                         <img src="img/specialOffers1.png" />
                         <p>Ультразвуковый денситометр SONOST-3000
                         </p>
-                        <a class="itemPoP" href="#">Получить
-                                                                КП</a>
+                        <a class="itemPoP" href="#KPForm" data-fancybox>Получить КП</a>
                     </a>
                 </div>
                 <div class="specialOffers__list-item
@@ -731,8 +730,7 @@
                         <img src="img/specialOffers2.png" />
                         <p>Установка фототерапевтическая CHS-PU34
                         </p>
-                        <a class="itemPoP" href="#">Получить
-                                                                КП</a>
+                        <a class="itemPoP" href="#KPForm" data-fancybox>Получить КП</a>
                     </a>
                 </div>
                 <div class="specialOffers__list-item
@@ -740,8 +738,7 @@
                     <a href="oneItem.html">
                         <img src="img/specialOffers3.png" />
                         <p>Фетальный монитор Bionet FC 700</p>
-                        <a class="itemPoP" href="#">Получить
-                                                                КП</a>
+                        <a class="itemPoP" href="#KPForm" data-fancybox>Получить КП</a>
                     </a>
                 </div>
                 <div class="specialOffers__list-item
@@ -750,8 +747,7 @@
                         <img src="img/specialOffers4.png" />
                         <p>Ультразвуковый денситометр SONOST-3000
                         </p>
-                        <a class="itemPoP" href="#">Получить
-                                                                КП</a>
+                        <a class="itemPoP" href="#KPForm" data-fancybox>Получить КП</a>
                     </a>
                 </div>
             </div>
@@ -2437,14 +2433,29 @@
             </div>
         </div>
     </footer>
-    <div id="hidden" style="display:
-                                                                            none">
-        <img src="img/logo.png" alt="logo" />
-        <p>Оставьте нам ваши контакты
-        </p>
-        <form action="#" id="formPhone">
-            <input type="text" placeholder="Введите имя..." />
-            <input type="tel" id="tel" placeholder="Телефон..." />
+    <div id="hidden" style="display: none;">
+        <img src="img/logo.png" alt="logo">
+        <p>Заполните форму и наш менеджер свяжется с вами в ближайшее время!</p>
+        <form action="#" id='formPhone'>
+            <input type="text" placeholder="Введите имя...">
+            <input type="tel" id="tel" placeholder="Телефон...">
+            <button>Заказать звонок</button>
+        </form>
+    </div>
+
+    <div id="KPForm" style="display: none;">
+        <p>оформить заявку</p>
+        <form action="#" id='FormKP'>
+            <input type="text" placeholder="Введите имя...">
+            <input type="email" placeholder="E-mail...">
+            <select name="client" id="typeClient">
+                <option value="">Тип клиента</option>
+                <option value="">Тип клиента</option>
+                <option value="">Тип клиента</option>
+                <option value="">Тип клиента</option>
+            </select>
+            <input type="tel" placeholder="Телефон...">
+            <textarea cols="30" rows="5" placeholder="Комментарий к заказу"></textarea>
             <button>отправить</button>
         </form>
     </div>

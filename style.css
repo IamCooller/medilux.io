@@ -144,7 +144,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 1.27;
     text-transform: uppercase;
     color: #393185;
     margin-bottom: 30px;
@@ -172,7 +172,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     color: #898989;
 }
 
@@ -181,14 +181,106 @@ body {
     background: #393185;
     border-radius: 3px;
     height: 37px;
-    max-width: 110px;
+    max-width: 169px;
     width: 100%;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.25;
     text-transform: uppercase;
     color: #FFFFFF;
     border: none;
     margin: 0 auto;
+}
+
+#KPForm {
+    max-width: 870px;
+    width: 100%;
+    background: #EDECF2;
+    border: 1px solid #EDECF2;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 30px 50px;
+    display: flex;
+    text-align: center;
+}
+
+#KPForm p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.27;
+    text-transform: uppercase;
+    color: #393185;
+    margin-bottom: 32px;
+}
+
+#KPForm form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#KPForm form input,
+#KPForm form select {
+    max-width: 369px;
+    width: 100%;
+    height: 39px;
+    background: #FFFFFF;
+    border: 1px solid #EDECF2;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none;
+    padding: 0 11px;
+}
+
+#KPForm form input:placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.28;
+    color: #898989;
+}
+
+#KPForm form select {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.28;
+    color: #898989;
+}
+
+#KPForm form textarea {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #EDECF2;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none;
+    padding: 10px 11px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+#KPForm form button {
+    background: #393185;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    height: 37px;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 110px;
+    outline: none;
+    border: none;
+}
+
+@media (max-width:880px) {
+    #KPForm form input,
+    #KPForm form select {
+        max-width: 100%;
+    }
 }
