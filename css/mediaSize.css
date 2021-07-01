@@ -319,6 +319,14 @@ body {
     .oneItem__table-right_price {
         flex-wrap: wrap;
     }
+    .oneItem__table-right_price .btn {
+        display: flex;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
     .footer__additional-social {
         display: flex;
         justify-content: center;
