@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -151,8 +153,9 @@
                             </svg>
                             <a href="tel:+74951098080">+7(495)109-80-80</a> </div>
                     </div>
-                    <button class="btn">Заказать звонок</button>
-
+                    <button data-fancybox href="#hidden" class="btn">
+                        Заказать звонок
+                    </button>
                     <ul class="header-top__menu">
                         <li class="active"><a href="specialOffer.html">Спецпредложения</a></li>
                         <li><a class="active_link">Каталог</a></li>
@@ -416,6 +419,15 @@
         </div>
 
     </footer>
+    <div id="hidden" style="display: none;">
+        <img src="img/logo.png" alt="logo">
+        <p>Оставьте нам ваши контакты</p>
+        <form action="#" id='formPhone'>
+            <input type="text" placeholder="Введите имя...">
+            <input type="tel" id="tel" placeholder="Телефон...">
+            <button>отправить</button>
+        </form>
+    </div>
 </body>
 
 </html>
