@@ -108,7 +108,7 @@
     font-size: 18px;
     line-height: 1.22;
     background: #FFFFFF;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #393185;
     height: 39px;
     border: 2px solid;
@@ -119,6 +119,10 @@
     -o-transition: .3s;
     width: 100%;
     display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .feedback .feedback-button button:hover {

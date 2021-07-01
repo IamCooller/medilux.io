@@ -28,7 +28,7 @@
 
 .catalogs__title {
     position: absolute;
-    z-index: 9;
+    z-index: 8;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) -155.17%, #FFFFFF 97.34%);
     border: 1px solid #EDECF2;
     box-sizing: border-box;
