@@ -60,7 +60,7 @@
     transition: .3s;
     width: 48px;
     right: 0;
-    z-index: 9;
+    z-index: 8;
 }
 
 .newsMain form button svg {
@@ -90,7 +90,7 @@
     display: grid;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
 

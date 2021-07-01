@@ -22,6 +22,10 @@
     padding: 20px 28px;
 }
 
+.nav-up {
+    background: #fff;
+}
+
 .breadcrumbs span,
 .breadcrumbs span a {
     font-weight: 500;
@@ -79,7 +83,7 @@ body {
 
 @media (max-width:1440px) {
     .nav-up {
-        top: -100px !important;
+        top: -150px !important;
     }
     .footer .footer__menu {
         padding: 0 10px;
@@ -317,6 +321,7 @@ body {
     }
     .footer__additional-social {
         display: flex;
+        justify-content: center;
     }
     .main header .header-top {
         padding-left: 20px;
@@ -326,6 +331,9 @@ body {
     .main header .header-top form {
         max-width: 80%;
     }
+    .nav-up {
+        top: -120px !important;
+    }
 }
 
 @media(max-width:770px) {
@@ -334,10 +342,6 @@ body {
     }
     .main header .header-top .header-top__menu li a {
         font-size: 12px;
-    }
-    .brands {
-        margin-top: 30px;
-        margin-bottom: 50px;
     }
     .about {
         padding-left: 0;
@@ -419,7 +423,7 @@ body {
         display: flex;
     }
     .nav-up {
-        top: -132px !important;
+        top: -150px !important;
     }
     .catalogs__item {
         max-width: 100%;
@@ -495,6 +499,10 @@ body {
     .feedback-button {
         max-width: 350px;
         margin: 0 auto;
+    }
+    .specialOffers {
+        margin-bottom: 30px;
+        padding: 0;
     }
 }
 
@@ -609,6 +617,9 @@ body {
     .news .news__more {
         font-size: 13px;
     }
+    .main header .header-top .header-top__menu {
+        padding: 16px 10px 17px;
+    }
 }
 
 @media (max-width:440px) {
@@ -623,7 +634,7 @@ body {
         justify-content: flex-start;
     }
     .main header .main__banner .main__banner-item {
-        padding: 65px 0;
+        padding: 65px 20px;
     }
     .about-right-content {
         max-width: 290px;
@@ -655,8 +666,15 @@ body {
     .title {
         font-size: 23px;
     }
+    .brands .brands-slick {
+        height: 90px;
+    }
 }
 
 .nav-up:hover {
-    top: 0 !important
+    top: 0 !important;
+}
+
+.nav-down {
+    background: #fff;
 }

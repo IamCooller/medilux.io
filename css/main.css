@@ -19,15 +19,15 @@
         flex-wrap: wrap;
         padding-top: 38px;
         padding-left: 38px;
-        padding-right: 38px;
+        padding-right: 44px;
         position: fixed;
         top: 0;
-        background: #fff;
         width: fit-content;
         z-index: 9;
         right: 0;
         width: calc(100% - 310px);
         transition: all .5s ease;
+        background: #FAFAFA;
     }
     
     .main header .header-top form {

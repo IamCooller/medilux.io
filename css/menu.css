@@ -20,15 +20,6 @@
     padding-bottom: 15px;
 }
 
-.menu .logo::after {
-    content: '';
-    width: 110%;
-    border-bottom: 1px solid #dbdbdb;
-    position: absolute;
-    bottom: 0;
-    RIGHT: -5px;
-}
-
 .logo img {
     width: 100%;
     display: block;
@@ -40,7 +31,7 @@
 
 .logo a {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.06;
     text-decoration: none;
@@ -107,8 +98,8 @@
     -ms-flex-align: center;
     align-items: center;
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.2;
     color: #000000;
     position: relative;
