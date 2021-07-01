@@ -65,7 +65,7 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         arrows: true,
-        slidesToShow: 8,
+        slidesToShow: 6,
         cssEase: 'linear',
         autoplaySpeed: 0,
         prevArrow: '<svg width="7" class="slick-arrow slick-arrow-prev" height="11" viewBox="0 0 7 11" fill="none" xmlns="https://www.w3.org/2000/svg"><path d="M0.65491 5.19814L5.74273 0.124392C5.90943 -0.0417463 6.17932 -0.041467 6.34573 0.125251C6.51202 0.291948 6.51159 0.561984 6.34487 0.728251L1.55989 5.50002L6.34505 10.2718C6.51174 10.4381 6.51217 10.7079 6.3459 10.8746C6.26248 10.9582 6.15319 11 6.0439 11C5.93489 11 5.82603 10.9585 5.74275 10.8755L0.65491 5.80187C0.574623 5.72199 0.52957 5.61328 0.52957 5.50002C0.52957 5.38675 0.574751 5.27817 0.65491 5.19814Z" fill="#393185"/></svg>',
@@ -73,7 +73,7 @@ $(document).ready(function() {
         responsive: [{
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 5
+                    slidesToShow: 4
                 }
             }, {
                 breakpoint: 770,
