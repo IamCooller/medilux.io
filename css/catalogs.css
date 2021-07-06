@@ -67,6 +67,7 @@
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    max-width: 20px;
 }
 
 .catalogs a:hover .catlogs__image img {
