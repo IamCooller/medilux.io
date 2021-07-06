@@ -526,8 +526,13 @@ body {
     }
     .oneItem__table-right_price {
         flex-wrap: wrap;
+        flex-direction: column;
     }
     .oneItem__table-right_price .btn {
+        margin-right: auto;
+        margin-left: 0;
+    }
+    .oneItem__table-right_price h3 {
         margin-right: auto;
     }
 }
