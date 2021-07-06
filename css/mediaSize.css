@@ -605,6 +605,7 @@ body {
     }
     .oneItem__content .tabs {
         flex-direction: column;
+        width: 100%;
     }
     .oneItem h2 {
         font-size: 25px;
