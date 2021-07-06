@@ -14,16 +14,31 @@
 .oneItem__table {
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .oneItem__table-left {
     max-width: 30%;
+    position: relative;
+}
+
+.oneItem__table-list {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .oneItem__table .slider-for {
     position: relative;
+    max-width: 70%;
 }
+
+.slider-nav {
+    max-width: 19%;
+}
+
+.slider-nav img {}
 
 .oneItem__table .slider-for .slick-arrow {
     position: absolute;
