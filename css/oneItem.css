@@ -9,6 +9,7 @@
     line-height: 1.26;
     color: #000000;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .oneItem__table {
@@ -226,6 +227,10 @@
     box-sizing: border-box;
     border-radius: 3px 3px 0px 0px;
     border-bottom: 0;
+}
+
+.oneItem-specialOffers .title {
+    padding: 0;
 }
 
 .oneItem__content .tab-pane {
